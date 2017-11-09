@@ -1,3 +1,9 @@
+html {
+  margin: auto;
+  text-align: center;
+  font-family: sans-serif;
+}
+
 ul {
   list-style-type: none;
 }
@@ -35,5 +41,5 @@ label img {
 
 :checked + label img {
   transform: scale(0.9);
-  /*box-shadow: 0 0 5px #333333;*/
+  box-shadow: 0 0 5px #333333;
 }
