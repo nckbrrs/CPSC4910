@@ -88,6 +88,8 @@ session_start();
         <br><br><br><br><br>
       -->
       </div>
+      <div id="clear">
+      </div>
     </section>
     <script type="text/javascript">var errorMessage = "<?php echo $errorMessage; ?>";</script>
     <script type="text/javascript" src="/cpsc4910/student/buildSandwich.js"></script>
