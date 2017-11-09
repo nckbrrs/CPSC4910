@@ -7,6 +7,8 @@ function nameNumValidate() {
   if (!isset($_POST['name']) || !isset($_POST['phoneNum'])) {
     return "You must provide a name and a phone number.";
   }
+  echo $_POST['name'];
+  echo $_POST['phoenNum'];
   return true;
 }
 
@@ -17,7 +19,6 @@ if(isset($_POST['nameNumFlag'])) {
   if (is_bool($valid) && $valid) {
     $_SESSION['name'] = $_POST['name'];
     $_SESSION['phoneNum'] = $_POST['phoneNum'];
-    echo "hi there";
   } else {
     if (is_string($valid)) {
       $errorMessage = $valid;
