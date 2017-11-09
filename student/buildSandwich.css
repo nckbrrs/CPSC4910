@@ -25,7 +25,7 @@ li {
 }
 
 input {
-  display:none;
+  display:block;
 }
 
 label {
