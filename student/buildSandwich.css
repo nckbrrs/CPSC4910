@@ -14,11 +14,11 @@ html {
 
 ul {
   background-color: yellow;
-  list-style-type: none;
+  /*list-style-type: none;*/
 }
 
 li {
-  display: inline;
+  display: inline-block;
   background-color: purple;
 }
 
@@ -27,7 +27,7 @@ input {
 }
 
 label {
-  /*display: inline-block;*/
+  display: inline-block;
   position: relative;
   cursor: pointer;
   border-radius: 100%;
