@@ -1,4 +1,4 @@
-<?php /*
+<?php
 session_start();
 
 $errorMessage = "false";
@@ -9,7 +9,7 @@ function nameNumValidate() {
   }
   return true;
 }
-
+/*
 if(isset($_POST['nameNumFlag'])) {
   $valid = nameNumValidate();
 
