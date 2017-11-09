@@ -19,8 +19,6 @@ session_start();
     <p id="instructions">Use the buttons below to choose your ingredients</p>
     <section class="container">
       <div id="buildSandwichDiv">
-        <br>
-        <!--
         <form id="buildSandwichForm" method="post" action="/cpsc4910/student/buildSandwich.php">
           <div id="chooseBread">
             <h3>Choose your bread:</h3>
@@ -80,15 +78,11 @@ session_start();
           <input type="hidden" name="buildSandwichFlag" value="1">
           <button id="buildSandwichSubmit" type="submit" name="buildSandwichSubmit">Review your order</button>
         </form>
-      -->
       </div>
       <div id="previewSandwichDiv">
-        <br>
-      <!--
         <br><br><br><br><br>
         <h1>Hi</h1>
         <br><br><br><br><br>
-      -->
       </div>
       <div id="clear">
       </div>
