@@ -27,23 +27,23 @@ echo $_POST['bread'];
           <div id="chooseBread">
             <h3>Choose your bread:</h3>
             <ul>
-              <li><input type="radio" name="bread" value="whiteBread" />
+              <li><input type="radio" name="bread" value="whiteBread" id="whiteBread"/>
                 <label for="whiteBread"><img src="http://boulangeriestmethode.com/data/N2fZiuOP/lesgrains-bleentier-bread-slice.png" /></label>
               </li>
-              <li><input type="radio" name="bread" value="wheatBread" />
+              <li><input type="radio" name="bread" value="wheatBread" id="wheatBread"/>
                 <label for="wheatBread"><img src="http://boulangeriestmethode.com/data/WpJTN5EL/lesgrains-9grains-bread-slice.png" /></label>
               </li>
-              <li><input type="radio" name="bread" value="sourdoughBread" />
+              <li><input type="radio" name="bread" value="sourdoughBread" id="sourdoughBread"/>
                 <label for="sourdoughBread"><img src="http://catalog.auntmillies.com/img/Bakehouse/Sliced/07241S_2.png" /></label>
               </li>
               <br>
-              <li><input type="radio" name="bread" value="flourTortilla" />
+              <li><input type="radio" name="bread" value="flourTortilla" id="flourTortilla"/>
                 <label for="flourTortilla"><img src="http://www.missionfoodservice.com/imagegen.ashx?image=%2Fmedia%2F1045%2Fheat-pressed-flourcob.png&width=205" /></label>
               </li>
-              <li><input type="radio" name="bread" value="herbTortilla" />
+              <li><input type="radio" name="bread" value="herbTortilla" id="herbTortilla"/>
                 <label for="herbTortilla"><img src="http://www.missionfoodservice.com/imagegen.ashx?image=%2Fmedia%2F1052%2Fspinach-herb-wrap-20119-10251-cob.png&width=255" /></label>
               </li>
-              <li><input type="radio" name="bread" value="whiteSub" />
+              <li><input type="radio" name="bread" value="whiteSub" id="whiteSub"/>
                 <label for="whiteSub"><img src="https://www.burryfoods.com/wp-content/uploads/2016/09/70037_SubRoll_Clip.png" /></label>
               </li>
             </ul>
