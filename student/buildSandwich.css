@@ -11,14 +11,14 @@ html {
 
 #buildSandwichDiv {
   position: absolute;
-  left: 0px;
+  left: -5px;
   width: 50%;
   border: 3px solid black;
 }
 
 #previewSandwichDiv {
   position: fixed;
-  right: 0px;
+  right: -5px;
   width: 50%;
   border: 3px solid red;
 }
