@@ -6,16 +6,19 @@ html {
 }
 
 .container {
+  display:block;
   width: 100%;
   margin:auto;
 }
 
 #buildSandwichDiv {
+  display:inline-block;
   width:49%;
   border: 1px solid black;
 }
 
 #previewSandwichDiv {
+  display:inline-block;
   width:49%;
   border: 1px solid grey;
 }
