@@ -5,18 +5,20 @@ html {
 }
 
 #buildSandwichDiv {
+  float:left;
   width: 50%;
   height: 100%;
   border: 5px solid black;
 }
 
-#sandwichPreview {
+#previewSandwichDiv {
+  float:right;
   width: 50%;
   height: 100%;
   border: 5px solid red;
 }
 
-#sandwichPreview h1 {
+#previewSandwichDiv h1 {
   position: absolute;
 }
 
