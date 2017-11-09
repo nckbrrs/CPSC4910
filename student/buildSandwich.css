@@ -22,7 +22,6 @@ html {
   display:inline-block;
   position:fixed;
   float:left;
-  right: 0px;
   width:49%;
   border: 1px solid grey;
 }
