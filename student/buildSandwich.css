@@ -24,6 +24,7 @@ html {
 }
 
 #previewSandwichDiv h1 {
+  text-align: center;
   position: fixed;
 }
 
