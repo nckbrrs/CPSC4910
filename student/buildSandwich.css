@@ -14,7 +14,7 @@ html {
   position:absolute;
   right:50%;
   width: 45%;
-  background-color: red;
+  border: 1px solid black;
 }
 
 #previewSandwichDiv {
@@ -22,7 +22,7 @@ html {
   position:fixed;
   left:50%;
   width: 45%;
-  background-color:blue;
+  border: 1px solid blue;
 }
 
 #clear {
