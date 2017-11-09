@@ -11,7 +11,7 @@ function nameNumValidate() {
 }
 
 if(isset($_POST['nameNumFlag'])) {
-  $valid = validate();
+  $valid = nameNumValidate();
 
   if (is_bool($valid) && $valid) {
     $_SESSION['name'] = $_POST['name'];
@@ -49,7 +49,7 @@ if(isset($_POST['nameNumFlag'])) {
         <button id="nameNumSubmit" type="submit" name="nameNumSubmit">Build Your Sandwich</button>
       </form>
     </div>
-    
+
     <!--<script type="text/javascript" src="/cpml commesc4910/student/sandwich-builder.js"></script>-->
   </body>
 </html>
