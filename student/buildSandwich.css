@@ -18,14 +18,13 @@ ul {
 }
 
 li {
-  margin-left: auto;
-  margin-right: auto;
+  padding-left: 0;
   display: inline-block;
   background-color: purple;
 }
 
 input {
-  display:block;
+  display:none;
 }
 
 label {
