@@ -18,9 +18,9 @@ session_start();
     <br>
     <p id="instructions">Use the buttons below to choose your ingredients</p>
     <div id="buildSandwichDiv">
-      <h3>Choose your bread:</h3>
       <form id="buildSandwichForm" method="post" action="/cpsc4910/student/buildSandwich.php">
         <div id="chooseBread">
+          <h3>Choose your bread:</h3>
           <ul>
             <li><input type="radio" name="bread" id="whiteBread" />
               <label for="whiteBread"><img src="http://lorempixel.com/100/100" /></label>
@@ -31,6 +31,7 @@ session_start();
           </ul>
         </div>
         <div id="chooseMeats">
+          <h3>Choose your meats:</h3>
           <ul>
             <li><input type="checkbox" id="turkey" />
               <label for="turkey"><img src="http://lorempixel.com/100/100" /></label>
