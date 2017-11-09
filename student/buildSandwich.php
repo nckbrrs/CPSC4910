@@ -41,6 +41,39 @@ session_start();
             </li>
           </ul>
         </div>
+        <div id="chooseCheeses">
+          <h3>Choose your cheeses:</h3>
+          <ul>
+            <li><input type="checkbox" id="swiss" />
+              <label for="swiss"><img src="http://lorempixel.com/100/100" /></label>
+            </li>
+            <li><input type="checkbox" id="provolone" />
+              <label for="provolone"><img src="http://lorempixel.com/100/100" /></label>
+            </li>
+          </ul>
+        </div>
+        <div id="chooseVeggies">
+          <h3>Choose your veggies:</h3>
+          <ul>
+            <li><input type="checkbox" id="lettuce" />
+              <label for="lettuce"><img src="http://lorempixel.com/100/100" /></label>
+            </li>
+            <li><input type="checkbox" id="tomato" />
+              <label for="tomato"><img src="http://lorempixel.com/100/100" /></label>
+            </li>
+          </ul>
+        </div>
+        <div id="chooseSauces">
+          <h3>Choose your sauce(s):</h3>
+          <ul>
+            <li><input type="checkbox" id="ranch" />
+              <label for="ranch"><img src="http://lorempixel.com/100/100" /></label>
+            </li>
+            <li><input type="checkbox" id="mustard" />
+              <label for="mustard"><img src="http://lorempixel.com/100/100" /></label>
+            </li>
+          </ul>
+        </div>
         <input type="hidden" name="buildSandwichFlag" value="1">
         <button id="buildSandwichSubmit" type="submit" name="buildSandwichSubmit">Review your order</button>
       </form>
