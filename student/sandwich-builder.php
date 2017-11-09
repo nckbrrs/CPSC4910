@@ -1,4 +1,4 @@
-<?php
+<?php /*
 session_start();
 
 $errorMessage = "false";
@@ -25,7 +25,7 @@ if(isset($_POST['nameNumFlag'])) {
   }
   return;
 }
-
+*/
 ?>
 
 <!DOCTYPE html>
