@@ -3,18 +3,23 @@ session_start();
 
 // if name and number already stored, redirect to sandwich-builder.php
 if (isset($_SESSION['name']) && isset($_SESSION['phoneNum'])) {
-  header("Location: /cpsc4910/student/sandwich-builder.php", true, 302);
+  header("Location: /cpsc4910/student/buildSandwich.php", true, 302);
   return;
 }
 
+// to be written to JS later in order to decide whether to render an error
 $errorMessage = "false";
 
+// form has been submitted, so save session variables
 if(isset($_POST['nameNumFlag'])) {
   $_SESSION['name'] = $_POST['name'];
   $_SESSION['phoneNum'] = $_POST['phoneNum'];
+  header("Location: /cpsc4910/student/buildSandwich.php", true, 302);
 }
 
+// FOR TESTING ONLY VVV
 session_destroy();
+// FOR TESTING ONLY ^^^
 ?>
 
 <!DOCTYPE html>
@@ -23,7 +28,6 @@ session_destroy();
     <title>Build Your Own Sandwich</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <link rel="stylesheet" type="text/css" href="/cpsc4910/student/sandwich-builder.css"/>
     <style type="text/css">
       html {
         display: block;
