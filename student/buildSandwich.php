@@ -24,10 +24,23 @@ session_start();
             <h3>Choose your bread:</h3>
             <ul>
               <li><input type="radio" name="bread" id="whiteBread" />
-                <label for="whiteBread"><img src="http://lorempixel.com/100/100" /></label>
+                <label for="whiteBread"><img src="http://boulangeriestmethode.com/data/N2fZiuOP/lesgrains-bleentier-bread-slice.png" /></label>
               </li>
               <li><input type="radio" name="bread" id="wheatBread" />
-                <label for="wheatBread"><img src="http://lorempixel.com/100/100" /></label>
+                <label for="wheatBread"><img src="http://boulangeriestmethode.com/data/WpJTN5EL/lesgrains-9grains-bread-slice.png" /></label>
+              </li>
+              <li><input type="radio" name="bread" id="sourdoughBread" />
+                <label for="sourdoughBread"><img src="http://catalog.auntmillies.com/img/Bakehouse/Sliced/07241S_2.png" /></label>
+              </li>
+              <br>
+              <li><input type="radio" name="bread" id="flourTortilla" />
+                <label for="flourTortilla"><img src="http://www.missionfoodservice.com/imagegen.ashx?image=%2Fmedia%2F1045%2Fheat-pressed-flourcob.png&width=205" /></label>
+              </li>
+              <li><input type="radio" name="bread" id="herbTortilla" />
+                <label for="herbTortilla"><img src="http://www.missionfoodservice.com/imagegen.ashx?image=%2Fmedia%2F1052%2Fspinach-herb-wrap-20119-10251-cob.png&width=255" /></label>
+              </li>
+              <li><input type="radio" name="bread" id="whiteSub" />
+                <label for="whiteSub"><img src="https://www.burryfoods.com/wp-content/uploads/2016/09/70037_SubRoll_Clip.png" /></label>
               </li>
             </ul>
           </div>
