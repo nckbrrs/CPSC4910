@@ -16,8 +16,9 @@ session_start();
     <h1>Build Your Own Sandwich</h1>
     <div id="errorMessage" class="errorMessage" style="visibility: hidden;"></div>
     <br>
-    <p id="instructions">Click the buttons below to choose your ingredients</p>
+    <p id="instructions">Use the buttons below to choose your ingredients</p>
     <div id="buildSandwichDiv">
+      <h3>Choose your bread:</h3>
       <form id="buildSandwichForm" method="post" action="/cpsc4910/student/buildSandwich.php">
         <div id="chooseBread">
           <ul>
