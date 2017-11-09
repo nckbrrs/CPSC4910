@@ -19,11 +19,8 @@ html {
 }
 
 #previewSandwichDiv {
-  display:inline-block;
   float:right;
   position:fixed;
-  top: auto;
-  left: auto;
   width:49%;
   border: 1px solid grey;
 }
