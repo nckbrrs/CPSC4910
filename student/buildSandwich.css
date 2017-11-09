@@ -23,7 +23,7 @@ html {
   float:right;
   position:fixed;
   top: auto;
-  right: auto;
+  left: auto;
   width:49%;
   border: 1px solid grey;
 }
