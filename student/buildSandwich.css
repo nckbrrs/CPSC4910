@@ -11,12 +11,12 @@ input[type="radio"] {
 }
 
 label {
-  border: 1px solid #ffffff;
   padding: 10px;
   display: block;
   position: relative;
   margin: 10px;
   cursor: pointer;
+  border-radius: 100%;
 }
 
 label img {
@@ -24,16 +24,14 @@ label img {
   width: 100px;
   transition-duration: 0.2s;
   transform-origin: 50% 50%;
+  border-radius: 100%;
 }
 
 :checked + label {
-  border-color: #ddd;
   background-color: lavender;
-  border-radius: 20%;
 }
 
 :checked + label img {
   transform: scale(0.9);
   box-shadow: 0 0 5px #333;
-  border-radius: 20%;
 }
