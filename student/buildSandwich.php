@@ -21,10 +21,10 @@ session_start();
       <form id="buildSandwichForm" method="post" action="/cpsc4910/student/buildSandwich.php">
         <div id="chooseBread">
           <ul>
-            <li><input type="radio" id="whiteBread" />
+            <li><input type="radio" name="bread" id="whiteBread" />
               <label for="whiteBread"><img src="http://lorempixel.com/100/100" /></label>
             </li>
-            <li><input type="radio" id="wheatBread" />
+            <li><input type="radio" name="bread" id="wheatBread" />
               <label for="wheatBread"><img src="http://lorempixel.com/100/100" /></label>
             </li>
           </ul>
