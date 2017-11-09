@@ -5,24 +5,21 @@ html {
   box-sizing: border-box;
 }
 
-.container {
+#container {
   width: 100%;
 }
 
 #buildSandwichDiv {
   display: inline-block;
-  position: absolute;
-  left: 0px;
-  width:49%;
-  border: 1px solid black;
+  width: 50%;
+  background-color: red;
 }
 
 #previewSandwichDiv {
   display: inline-block;
   position:fixed;
-  right: 0px;
-  width:49%;
-  border: 1px solid grey;
+  width: 50%;
+  background-color:blue;
 }
 
 #clear {

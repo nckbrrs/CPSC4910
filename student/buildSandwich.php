@@ -17,7 +17,7 @@ session_start();
     <div id="errorMessage" class="errorMessage" style="visibility: hidden;"></div>
     <br>
     <p id="instructions">Use the buttons below to choose your ingredients</p>
-    <section class="container">
+    <div id="container">
       <div id="buildSandwichDiv">
         <form id="buildSandwichForm" method="post" action="/cpsc4910/student/buildSandwich.php">
           <div id="chooseBread">
@@ -86,7 +86,7 @@ session_start();
       </div>
       <div id="clear">
       </div>
-    </section>
+    </div>
     <script type="text/javascript">var errorMessage = "<?php echo $errorMessage; ?>";</script>
     <script type="text/javascript" src="/cpsc4910/student/buildSandwich.js"></script>
   </body>
