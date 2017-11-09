@@ -10,12 +10,14 @@ html {
 }
 
 #buildSandwichDiv {
+  display: inline-flex;
   float:left;
   width:49%;
   border: 1px solid black;
 }
 
 #previewSandwichDiv {
+  display: inline-flex;
   position:fixed;
   width:30%;
   border: 1px solid grey;
