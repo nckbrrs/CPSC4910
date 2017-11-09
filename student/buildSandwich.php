@@ -1,5 +1,7 @@
 <?php
 session_start();
+$_SESSION = array();
+session_start();
 
 echo $_POST['bread'];
 
