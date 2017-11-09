@@ -23,7 +23,7 @@ label img {
   height: 100px;
   width: 100px;
   transition-duration: 0.2s;
-  transform-origin: 50% 50%;
+  transform-origin: 50% 70%;
   border-radius: 100%;
 }
 
