@@ -11,12 +11,14 @@ html {
 
 #buildSandwichDiv {
   display: inline-block;
+  float:left;
   width: 50%;
   background-color: red;
 }
 
 #previewSandwichDiv {
   display: inline-block;
+  float:right;
   width: 50%;
   background-color:blue;
 }
