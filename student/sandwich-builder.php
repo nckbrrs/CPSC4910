@@ -10,7 +10,7 @@ function nameNumValidate() {
   echo "name is";
   echo $_POST['name'];
   echo "phoneNum is";
-  echo $_POST['phoenNum'];
+  echo $_POST['phoneNum'];
   return true;
 }
 
