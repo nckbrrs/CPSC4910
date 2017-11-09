@@ -12,16 +12,14 @@ html {
 
 #buildSandwichDiv {
   width:50%;
-  height:100%;
   float:left;
-  background-color:red;
+  border: 1px solid black;
 }
 
 #previewSandwichDiv {
   width:50%;
-  height:100%;
   float:left;
-  background-color:blue;
+  border: 1px solid grey;
 }
 
 #clear {
