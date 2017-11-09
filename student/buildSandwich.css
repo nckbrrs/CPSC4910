@@ -15,15 +15,15 @@ html {
   float: left;
   left: 0px;
   width: 50%;
-  border: -3px solid black;
+  border: 3px solid black;
 }
 
 #previewSandwichDiv {
   position: fixed;
-  float: right;
+  float: left;
   right: 0px;
   width: 50%;
-  border: -3px solid red;
+  border: 3px solid red;
 }
 
 ul {
