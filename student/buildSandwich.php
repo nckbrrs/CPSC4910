@@ -1,6 +1,8 @@
 <?php
 session_start();
 
+echo $_POST['bread'];
+
 ?>
 
 <!DOCTYPE html>
