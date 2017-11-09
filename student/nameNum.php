@@ -18,6 +18,7 @@ if(isset($_POST['nameNumFlag'])) {
 }
 
 // FOR TESTING ONLY VVV
+$_SESSION = array();
 session_destroy();
 // FOR TESTING ONLY ^^^
 ?>
