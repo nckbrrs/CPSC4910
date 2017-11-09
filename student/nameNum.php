@@ -1,6 +1,12 @@
 <?php
 session_start();
 
+// if name and number already stored, redirect to sandwich-builder.php
+if (isset($_SESSION['name']) && isset($_SESSION['phoneNum'])) {
+  header("Location: /cpsc4910/sandwich-builder.php", true, 302);
+  return;
+}
+
 $errorMessage = "false";
 
 if(isset($_POST['nameNumFlag'])) {
@@ -17,6 +23,14 @@ if(isset($_POST['nameNumFlag'])) {
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <link rel="stylesheet" type="text/css" href="/cpsc4910/student/sandwich-builder.css"/>
+    <style type="text/css">
+      html {
+        display: block;
+        margin: auto;
+        text-align: center;
+        font-family: sans-serif;
+      }
+    </style>
   </head>
 
   <body>
@@ -25,7 +39,7 @@ if(isset($_POST['nameNumFlag'])) {
     <br>
     <p id="instructions">Enter your name and phone number to begin:</p>
     <div id="nameNumDiv">
-      <form id="nameNumForm" method="post" action="/cpsc4910/student/sandwich-builder.php">
+      <form id="nameNumForm" method="post" action="/cpsc4910/student/nameNum.php">
         <label>Name: <input type="text" name="name" id="name"></label><br>
         <label>Phone Number: <input type="tel" name="phoneNum" id="phoneNum"></label><br>
         <input type="hidden" name="nameNumFlag" value="1">
@@ -33,6 +47,6 @@ if(isset($_POST['nameNumFlag'])) {
       </form>
     </div>
     <script type="text/javascript">var errorMessage = "<?php echo $errorMessage; ?>";</script>
-    <script type="text/javascript" src="/cpsc4910/student/sandwich-builder.js"></script>
+    <script type="text/javascript" src="/cpsc4910/student/nameNum.js"></script>
   </body>
 </html>
