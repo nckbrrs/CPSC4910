@@ -69,5 +69,5 @@ label img {
 
 :checked + label img {
   transform: scale(0.9);
-  box-shadow: 0 0 5px #333333;
+  background-color:white;
 }
