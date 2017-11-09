@@ -12,6 +12,7 @@ html {
 #buildSandwichDiv {
   display: inline-block;
   position:absolute;
+  padding: 5px;
   right:50%;
   width: 45%;
   border: 1px solid black;
@@ -20,6 +21,7 @@ html {
 #previewSandwichDiv {
   display: inline-block;
   position:fixed;
+  padding: 5px;
   left:50%;
   width: 45%;
   border: 1px solid blue;
