@@ -17,9 +17,10 @@ html {
 }
 
 #previewSandwichDiv {
-  display: inline-flex;
+  display: inline-block;
+  right: 0px;
   position:fixed;
-  width:30%;
+  width:50%;
   border: 1px solid grey;
 }
 
