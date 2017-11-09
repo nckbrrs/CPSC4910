@@ -17,6 +17,7 @@ input {
 }
 
 label {
+  background-color:blue;
   padding: 10px;
   display: block;
   position: relative;
