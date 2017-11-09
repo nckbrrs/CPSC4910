@@ -24,10 +24,10 @@ function nameNumValidate() {
 }
 
 function nameNumOnSubmit() {
-  if (!validate()) {
+  if (!nameNumValidate()) {
     return false;
   }
-  
+
   var buttonNode = document.getElementById("nameNumSubmit");
   buttonNode.innerText = "Submitting, please wait...";
   return true;
