@@ -9,14 +9,7 @@ session_start();
     <title>Sandwich Builder – Build Your Sandwich</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
-    <style type="text/css">
-      html {
-        display: block;
-        margin: auto;
-        text-align: center;
-        font-family: sans-serif;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="/cpsc4910/student/buildSandwich.css" />
   </head>
 
   <body>
@@ -26,7 +19,16 @@ session_start();
     <p id="instructions">Click the buttons below to choose your ingredients</p>
     <div id="buildSandwichDiv">
       <form id="buildSandwichForm" method="post" action="/cpsc4910/student/buildSandwich.php">
-        <!--here is where ingredient variables will go lol-->
+        <div id="chooseBread">
+          <ul>
+            <li><input type="radio" id="whiteBread" />
+              <label for="whiteBread"><img src="http://lorempixel.com/100/100" /></label>
+            </li>
+            <li><input type="radio" id="wheatBread" />
+              <label for="wheatBread"><img src="http://lorempixel.com/100/100" /></label>
+            </li>
+          </ul>
+        </div>
         <input type="hidden" name="buildSandwichFlag" value="1">
         <button id="buildSandwichSubmit" type="submit" name="buildSandwichSubmit">Review your order</button>
       </form>
