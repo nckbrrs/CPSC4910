@@ -4,9 +4,17 @@ html {
   font-family: sans-serif;
 }
 
+#chooseBread {
+  background-color: blue;
+}
+
+#chooseMeats {
+  background-color: red;
+}
+
 ul {
+  background-color: yellow;
   list-style-type: none;
-  margin-left: 25%;
 }
 
 li {
