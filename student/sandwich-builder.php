@@ -17,6 +17,7 @@ if(isset($_POST['nameNumFlag'])) {
   if (is_bool($valid) && $valid) {
     $_SESSION['name'] = $_POST['name'];
     $_SESSION['phoneNum'] = $_POST['phoneNum'];
+    echo "hi there";
   } else {
     if (is_string($valid)) {
       $errorMessage = $valid;
