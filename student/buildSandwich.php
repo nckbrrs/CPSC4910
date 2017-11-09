@@ -34,10 +34,10 @@ session_start();
           <h3>Choose your meats:</h3>
           <ul>
             <li><input type="checkbox" id="turkey" />
-              <label for="turkey"><img src="http://lorempixel.com/100/100" /></label>
+              <label for="turkey"><img src="http://lorempixel.com/100/100"/></label>
             </li>
             <li><input type="checkbox" id="ham" />
-              <label for="ham"><img src="http://lorempixel.com/100/100" /></label>
+              <label for="ham"><img src="http://lorempixel.com/100/100"/></label>
             </li>
           </ul>
         </div>
