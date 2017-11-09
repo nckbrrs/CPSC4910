@@ -46,6 +46,7 @@ label img {
 
 :checked + label {
   border-color: #ddd;
+  background-color: lightblue;
 }
 /*
 :checked + label:before {
