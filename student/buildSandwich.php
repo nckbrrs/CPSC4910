@@ -51,44 +51,81 @@ echo $_POST['bread'];
           <div id="chooseMeats">
             <h3>Choose your meats:</h3>
             <ul>
-              <li><input type="checkbox" id="turkey" />
+              <li><input type="checkbox" value="turkey" id="turkey" />
                 <label for="turkey"><img src="http://lorempixel.com/100/100"/></label>
               </li>
-              <li><input type="checkbox" id="ham" />
+              <li><input type="checkbox" value="ham" id="ham" />
                 <label for="ham"><img src="http://lorempixel.com/100/100"/></label>
+              </li>
+              <li><input type="checkbox" value="salami" id="salami" />
+                <label for="salami"><img src="http://lorempixel.com/100/100"/></label>
+              </li>
+              <br>
+              <li><input type="checkbox" value="tunaSalad" id="tunaSalad" />
+                <label for="tunaSalad"><img src="http://lorempixel.com/100/100"/></label>
+              </li>
+              <li><input type="checkbox" value="chickenSalad" id="chickenSalad" />
+                <label for="chickenSalad"><img src="http://lorempixel.com/100/100"/></label>
               </li>
             </ul>
           </div>
           <div id="chooseCheeses">
             <h3>Choose your cheeses:</h3>
             <ul>
-              <li><input type="checkbox" id="swiss" />
+              <li><input type="checkbox" value="swiss" id="swiss" />
                 <label for="swiss"><img src="http://lorempixel.com/100/100" /></label>
               </li>
-              <li><input type="checkbox" id="provolone" />
+              <li><input type="checkbox" value="swiss" id="provolone" />
                 <label for="provolone"><img src="http://lorempixel.com/100/100" /></label>
+              </li>
+              <li><input type="checkbox" value="cheddar" id="cheddar" />
+                <label for="cheddar"><img src="http://lorempixel.com/100/100" /></label>
+              </li>
+              <br>
+              <li><input type="checkbox" value="pepperJack" id="pepperJack" />
+                <label for="pepperJack"><img src="http://lorempixel.com/100/100" /></label>
               </li>
             </ul>
           </div>
           <div id="chooseVeggies">
             <h3>Choose your veggies:</h3>
             <ul>
-              <li><input type="checkbox" id="lettuce" />
+              <li><input type="checkbox" value="lettuce" id="lettuce" />
                 <label for="lettuce"><img src="http://lorempixel.com/100/100" /></label>
               </li>
-              <li><input type="checkbox" id="tomato" />
+              <li><input type="checkbox" value="tomato" id="tomato" />
                 <label for="tomato"><img src="http://lorempixel.com/100/100" /></label>
+              </li>
+              <li><input type="checkbox" value="spinach" id="spinach" />
+                <label for="spinach"><img src="http://lorempixel.com/100/100" /></label>
+              </li>
+              <br>
+              <li><input type="checkbox" value="onions" id="onions" />
+                <label for="onions"><img src="http://lorempixel.com/100/100" /></label>
+              </li>
+              <li><input type="checkbox" value="cucumbers" id="cucumbers" />
+                <label for="cucumbers"><img src="http://lorempixel.com/100/100" /></label>
               </li>
             </ul>
           </div>
           <div id="chooseSauces">
             <h3>Choose your sauce(s):</h3>
             <ul>
-              <li><input type="checkbox" id="ranch" />
+              <li><input type="checkbox" value="ranch" id="ranch" />
                 <label for="ranch"><img src="http://lorempixel.com/100/100" /></label>
               </li>
-              <li><input type="checkbox" id="mustard" />
+              <li><input type="checkbox" value="mustard" id="mustard" />
                 <label for="mustard"><img src="http://lorempixel.com/100/100" /></label>
+              </li>
+              <li><input type="checkbox" value="chipotle" id="chipotle" />
+                <label for="chipotle"><img src="http://lorempixel.com/100/100" /></label>
+              </li>
+              <br>
+              <li><input type="checkbox" value="olive oil" id="oliveOil" />
+                <label for="oliveOil"><img src="http://lorempixel.com/100/100" /></label>
+              </li>
+              <li><input type="checkbox" value="mayonnaise" id="mayonnaise" />
+                <label for="mayonnaise"><img src="http://lorempixel.com/100/100" /></label>
               </li>
             </ul>
           </div>
