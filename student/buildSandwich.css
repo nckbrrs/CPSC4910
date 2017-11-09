@@ -7,12 +7,12 @@ html {
 .container {
   display: table;
   width: 100%;
-  border: 3px solid blue;
+  overflow: hidden;
 }
 
 #buildSandwichDiv {
   position: absolute;
-  display: inline-block;
+  float: left;
   left: 0px;
   width: 50%;
   border: 3px solid black;
@@ -20,7 +20,7 @@ html {
 
 #previewSandwichDiv {
   position: fixed;
-  display: inline-block
+  float: right;
   right: 0px;
   width: 50%;
   border: 3px solid red;
