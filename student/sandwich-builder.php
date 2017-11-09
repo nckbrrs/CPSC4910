@@ -40,9 +40,10 @@ if(isset($_POST['nameNumFlag'])) {
 
   <body>
     <h1>Build Your Own Sandwich</h1>
+    <div id="errorMessage" class="errorMessage" style="visibility: hidden;"></div>
+    <br>
     <p id="instructions">Enter your name and phone number to begin:</p>
     <div id="nameNumDiv">
-      <div id="errorMessage" class="errorMessage" style="visibility: hidden;"></div>
       <form id="nameNumForm" method="post" action="/cpsc4910/student/sandwich-builder.php">
         <label>Name: <input type="text" name="name" id="name"></label><br>
         <label>Phone Number: <input type="tel" name="phoneNum" id="phoneNum"></label><br>
