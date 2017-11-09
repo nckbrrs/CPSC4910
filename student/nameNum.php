@@ -27,7 +27,7 @@ session_destroy();
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Build Your Own Sandwich</title>
+    <title>Sandwich Builder – Enter Your Name and Number</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <style type="text/css">
