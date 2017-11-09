@@ -12,7 +12,6 @@ html {
 #buildSandwichDiv {
   display: inline-block;
   float:left;
-  padding-left: 0px;
   left:0px;
   width: 50%;
   background-color: red;
@@ -23,7 +22,7 @@ html {
   position:fixed;
   left:50%;
   float:right;
-  width: 50%;
+  width: 40%;
   background-color:blue;
 }
 
