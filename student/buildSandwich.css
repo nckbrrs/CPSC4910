@@ -20,7 +20,7 @@ html {
 
 #previewSandwichDiv {
   display:inline-block;
-  float:left;
+  float:right;
   width:49%;
   border: 1px solid grey;
 }
