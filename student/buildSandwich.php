@@ -30,6 +30,16 @@ session_start();
             </li>
           </ul>
         </div>
+        <div id="chooseMeats">
+          <ul>
+            <li><input type="checkbox" id="turkey" />
+              <label for="turkey"><img src="http://lorempixel.com/100/100" /></label>
+            </li>
+            <li><input type="checkbox" id="ham" />
+              <label for="ham"><img src="http://lorempixel.com/100/100" /></label>
+            </li>
+          </ul>
+        </div>
         <input type="hidden" name="buildSandwichFlag" value="1">
         <button id="buildSandwichSubmit" type="submit" name="buildSandwichSubmit">Review your order</button>
       </form>
