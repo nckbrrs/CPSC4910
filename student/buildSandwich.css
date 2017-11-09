@@ -11,6 +11,7 @@ html {
 
 #buildSandwichDiv {
   display: inline-block;
+  position: absolute;
   left: 0px;
   width:49%;
   border: 1px solid black;
