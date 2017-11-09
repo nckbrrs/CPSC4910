@@ -50,6 +50,6 @@ if(isset($_POST['nameNumFlag'])) {
       </form>
     </div>
     <script type="text/javascript">var errorMessage = "<?php echo $errorMessage; ?>";</script>
-    <script type="text/javascript" src="/cpsc4910/student/sandwich-builder.js"></script>
+    <!--<script type="text/javascript" src="/cpml commesc4910/student/sandwich-builder.js"></script>-->
   </body>
 </html>
