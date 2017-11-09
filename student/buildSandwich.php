@@ -78,6 +78,9 @@ session_start();
         <button id="buildSandwichSubmit" type="submit" name="buildSandwichSubmit">Review your order</button>
       </form>
     </div>
+    <div id="sandwichPreview">
+      <h1>Here's a preview of ur samich</h1>
+    </div>
     <script type="text/javascript">var errorMessage = "<?php echo $errorMessage; ?>";</script>
     <script type="text/javascript" src="/cpsc4910/student/buildSandwich.js"></script>
   </body>

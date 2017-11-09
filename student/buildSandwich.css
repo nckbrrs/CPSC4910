@@ -5,9 +5,19 @@ html {
 }
 
 #buildSandwichDiv {
-  width: 75%;
+  width: 50%;
   height: 100%;
   border: 5px solid black;
+}
+
+#sandwichPreview {
+  width: 50%;
+  height: 100%;
+  border: 5px solid red;
+}
+
+#sandwichPreview h1 {
+  position: absolute;
 }
 
 ul {
