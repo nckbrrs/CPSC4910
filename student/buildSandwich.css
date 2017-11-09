@@ -19,7 +19,7 @@ html {
 }
 
 #previewSandwichDiv h1 {
-  position: absolute;
+  position: fixed;
 }
 
 ul {
