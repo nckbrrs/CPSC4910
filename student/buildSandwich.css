@@ -7,12 +7,12 @@ html {
 
 #container {
   width: 100%;
-  left:0px;
 }
 
 #buildSandwichDiv {
   display: inline-block;
   float:left;
+  padding-left: 0px;
   left:0px;
   width: 50%;
   background-color: red;
