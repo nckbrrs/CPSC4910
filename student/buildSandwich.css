@@ -6,14 +6,12 @@ html {
 
 #buildSandwichDiv {
   float:left;
-  width: 45%;
   height: 100%;
   border: 5px solid black;
 }
 
 #previewSandwichDiv {
   float:right;
-  width: 45%;
   height: 100%;
   border: 5px solid red;
 }
