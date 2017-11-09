@@ -10,7 +10,7 @@ function nameNumValidate() {
   return true;
 }
 
-/*
+
 if(isset($_POST['nameNumFlag'])) {
   $valid = nameNumValidate();
 
@@ -26,7 +26,7 @@ if(isset($_POST['nameNumFlag'])) {
   }
   return;
 }
-*/
+
 ?>
 
 <!DOCTYPE html>
