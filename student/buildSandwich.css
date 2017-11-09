@@ -19,6 +19,7 @@ html {
 #previewSandwichDiv {
   display: inline-block;
   float:right;
+  position:fixed;
   width: 50%;
   background-color:blue;
 }
