@@ -14,7 +14,8 @@ $errorMessage = "false";
 if(isset($_POST['nameNumFlag'])) {
   $_SESSION['name'] = $_POST['name'];
   $_SESSION['phoneNum'] = $_POST['phoneNum'];
-  header("Location: /cpsc4910/student/buildSandwich.php", true, 302);
+  /*
+  header("Location: /cpsc4910/student/buildSandwich.php", true, 302);*/
 }
 
 // FOR TESTING ONLY VVV
