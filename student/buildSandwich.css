@@ -12,14 +12,12 @@ html {
 }
 
 #buildSandwichDiv {
-  display:inline-block;
   float:left;
   width:49%;
   border: 1px solid black;
 }
 
 #previewSandwichDiv {
-  display: inline;
   float:right;
   position:fixed;
   width:49%;
