@@ -3,7 +3,7 @@ session_start();
 
 // if name and number already stored, redirect to sandwich-builder.php
 if (isset($_SESSION['name']) && isset($_SESSION['phoneNum'])) {
-  header("Location: /cpsc4910/sandwich-builder.php", true, 302);
+  header("Location: /cpsc4910/student/sandwich-builder.php", true, 302);
   return;
 }
 
@@ -14,6 +14,7 @@ if(isset($_POST['nameNumFlag'])) {
   $_SESSION['phoneNum'] = $_POST['phoneNum'];
 }
 
+session_destroy();
 ?>
 
 <!DOCTYPE html>
