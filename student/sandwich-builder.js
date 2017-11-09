@@ -10,7 +10,24 @@ function showError(msg) {
   }
 };
 
+function nameNumValidate() {
+  var name = document.getElementById("name").value;
+  var phoneNum = document.getElementById("phoneNum").value;
+
+  if (name === "" || phoneNum === "") {
+    showError("You must provide a name and a phone number.");
+    return false;
+  }
+
+  showError("false");
+  return true;
+}
+
 function nameNumOnSubmit() {
+  if (!validate()) {
+    return false;
+  }
+  
   var buttonNode = document.getElementById("nameNumSubmit");
   buttonNode.innerText = "Submitting, please wait...";
   return true;
