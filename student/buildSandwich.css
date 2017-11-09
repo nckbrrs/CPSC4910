@@ -45,6 +45,7 @@ input {
 label {
   display: inline-block;
   position: relative;
+  padding: 10px;
   cursor: pointer;
   border-radius: 100%;
   transition-duration: 0.2s;

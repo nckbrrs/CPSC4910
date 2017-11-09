@@ -81,7 +81,7 @@ session_start();
       </div>
       <div id="previewSandwichDiv">
         <br><br><br><br><br>
-        <h1>Hi</h1>
+        <h1>This Should Be Fixed</h1>
         <br><br><br><br><br>
       </div>
       <div id="clear">
