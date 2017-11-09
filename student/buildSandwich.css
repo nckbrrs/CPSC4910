@@ -4,24 +4,19 @@ html {
   font-family: sans-serif;
 }
 
-#chooseBread {
-  background-color: blue;
-}
-
-#chooseMeats {
-  background-color: red;
+#buildSandwichDiv {
+  width: 75%;
+  height: 100%;
+  border: 5px solid black;
 }
 
 ul {
-  background-color: yellow;
   list-style-type: none;
   padding-left: 0px;
 }
 
 li {
-  padding-left: 0px;
   display: inline-block;
-  background-color: purple;
 }
 
 input {
