@@ -80,9 +80,7 @@ session_start();
         </form>
       </div>
       <div id="previewSandwichDiv">
-        <br><br><br><br><br>
         <h1>Live sandwich preview here</h1>
-        <br><br><br><br><br>
       </div>
       <div id="clear">
       </div>
