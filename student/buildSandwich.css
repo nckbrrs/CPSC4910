@@ -6,10 +6,10 @@ html {
 
 ul {
   list-style-type: none;
+  margin-left: 25%;
 }
 
 li {
-  margin-left: 25%;
   display: inline-block;
 }
 
