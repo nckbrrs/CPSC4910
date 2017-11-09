@@ -11,13 +11,13 @@ html {
 }
 
 #buildSandwichDiv {
-  width:50%;
+  width:49%;
   float:left;
   border: 1px solid black;
 }
 
 #previewSandwichDiv {
-  width:50%;
+  width:49%;
   float:left;
   border: 1px solid grey;
 }
