@@ -6,7 +6,6 @@ $errorMessage = "false";
 if(isset($_POST['nameNumFlag'])) {
   $_SESSION['name'] = $_POST['name'];
   $_SESSION['phoneNum'] = $_POST['phoneNum'];
-  return;
 }
 
 ?>
