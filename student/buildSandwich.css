@@ -21,6 +21,7 @@ li {
   margin-left: auto;
   margin-right: auto;
   display: inline-block;
+  background-color: purple;
 }
 
 input {
