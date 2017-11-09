@@ -3,26 +3,9 @@ session_start();
 
 $errorMessage = "false";
 
-function nameNumValidate() {
-  if ((!isset($_POST['name'])) || (!isset($_POST['phoneNum']))) {
-    return "You must provide a name and a phone number.";
-  }
-  return true;
-}
-
-
 if(isset($_POST['nameNumFlag'])) {
-  $valid = nameNumValidate();
-  echo $valid;
-
-  if (is_bool($valid) && $valid) {
-    $_SESSION['name'] = $_POST['name'];
-    $_SESSION['phoneNum'] = $_POST['phoneNum'];
-  } else {
-    if (is_string($valid)) {
-      $errorMessage = $valid;
-    }
-  }
+  $_SESSION['name'] = $_POST['name'];
+  $_SESSION['phoneNum'] = $_POST['phoneNum'];
   return;
 }
 
