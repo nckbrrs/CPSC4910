@@ -4,7 +4,7 @@ session_start();
 $errorMessage = "false";
 
 function nameNumValidate() {
-  if ((!isset($_POST['name'])) || (!isset($_POST['phoneNum'])) {
+  if ((!isset($_POST['name'])) || (!isset($_POST['phoneNum']))) {
     return "You must provide a name and a phone number.";
   }
   return true;
