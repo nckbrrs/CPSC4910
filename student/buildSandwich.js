@@ -32,7 +32,7 @@ function updatePreview(sandwich) {
   }
   sandwichAsHTML.concat("</ul><br>");
 
-  previewSnadwichNode.innerHTML = sandwichAsHTML;
+  previewSandwichNode.innerHTML = sandwichAsHTML;
 }
 
 function buildSandwichOnSubmit() {
