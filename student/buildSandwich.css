@@ -9,7 +9,7 @@ html {
   width: 100%;
 }
 
-#buildSandwichDiv {
+#leftHalfDiv {
   display: inline-block;
   position:absolute;
   padding: 5px;
@@ -18,7 +18,7 @@ html {
   border: 1px solid orange;
 }
 
-#previewSandwichDiv {
+#rightHalfDiv {
   display: inline-block;
   position:fixed;
   padding: 5px;

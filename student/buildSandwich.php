@@ -40,7 +40,7 @@ echo "</table";
     <div id="errorMessage" class="errorMessage" style="visibility: hidden;"></div>
     <br>
     <div id="container">
-      <div id="buildSandwichDiv">
+      <div id="leftHalfDiv">
         <p id="instructions">Tap the buttons below to choose your ingredients<br></p>
         <form id="buildSandwichForm" method="post" action="/cpsc4910/student/buildSandwich.php">
           <div id="chooseBread">
@@ -187,8 +187,10 @@ echo "</table";
           <button id="buildSandwichSubmit" type="submit" name="buildSandwichSubmit">Review your order</button>
         </form>
       </div>
-      <div id="previewSandwichDiv">
-        <h1>Live sandwich preview here</h1>
+      <div id="rightHalfDiv">
+        <h1>Your current sandwich:</h1>
+        <div id="previewSandwichDiv">
+        </div>
       </div>
       <div id="clear">
       </div>

@@ -39,7 +39,7 @@ function onLoad() {
           sandwich['meats'].splice(index, 1);
         }
       }
-      console.log(JSON.stringify(sandwich));
+      previewSandwichNode.innerHTML = JSON.stringify(sandwich);
     }
   }
 
@@ -54,7 +54,7 @@ function onLoad() {
           sandwich['cheeses'].splice(index, 1);
         }
       }
-      console.log(JSON.stringify(sandwich));
+      previewSandwichNode.innerHTML = JSON.stringify(sandwich);
     }
   }
 
@@ -69,7 +69,7 @@ function onLoad() {
           sandwich['veggies'].splice(index, 1);
         }
       }
-      console.log(JSON.stringify(sandwich));
+      previewSandwichNode.innerHTML = JSON.stringify(sandwich);
     }
   }
 
@@ -84,7 +84,7 @@ function onLoad() {
           sandwich['sauces'].splice(index, 1);
         }
       }
-      console.log(JSON.stringify(sandwich));
+      previewSandwichNode.innerHTML = JSON.stringify(sandwich);
     }
   }
 };
