@@ -37,11 +37,11 @@ echo "</table";
 
   <body>
     <h1>Build Your Own Sandwich</h1>
+    <h3 id="instructions">Tap the buttons below to choose your ingredients</h3>
     <div id="errorMessage" class="errorMessage" style="visibility: hidden;"></div>
     <br>
     <div id="container">
       <div id="leftHalfDiv">
-        <p id="instructions">Tap the buttons below to choose your ingredients<br></p>
         <form id="buildSandwichForm" method="post" action="/cpsc4910/student/buildSandwich.php">
           <div id="chooseBread">
             <h3>Choose your bread:</h3>
@@ -188,7 +188,7 @@ echo "</table";
         </form>
       </div>
       <div id="rightHalfDiv">
-        <h1>Your current sandwich:</h1>
+        <h3>Your current sandwich:</h3>
         <div id="previewSandwichDiv">
         </div>
       </div>

@@ -1,31 +1,31 @@
 function updatePreview(sandwich) {
   var previewSandwichNode = document.getElementById("previewSandwichDiv");
   var sandwichAsHTML = "";
-  sandwichAsHTML += "<u>Bread</u>: ";
+  sandwichAsHTML += "<b>Bread</b>: ";
   sandwichAsHTML += (sandwich['bread'] + "<br>");
 
-  sandwichAsHTML += "<u>Meats</u>: ";
+  sandwichAsHTML += "<b>Meats</b>: ";
   for (meat in sandwich['meats']) {
     sandwichAsHTML += (sandwich['meats'][meat] + ", ");
   }
   sandwichAsHTML = sandwichAsHTML.replace(/,\s*$/, "");
   sandwichAsHTML += "<br>";
 
-  sandwichAsHTML += "<u>Cheeses</u>: ";
+  sandwichAsHTML += "<b>Cheeses</b>: ";
   for (cheese in sandwich['cheeses']) {
     sandwichAsHTML += (sandwich['cheeses'][cheese] + ", ");
   }
   sandwichAsHTML = sandwichAsHTML.replace(/,\s*$/, "");
   sandwichAsHTML += "<br>";
 
-  sandwichAsHTML += "<u>Veggies</u>: ";
+  sandwichAsHTML += "<b>Veggies</b>: ";
   for (veggie in sandwich['veggies']) {
     sandwichAsHTML += (sandwich['veggies'][veggie] + ", ");
   }
   sandwichAsHTML = sandwichAsHTML.replace(/,\s*$/, "");
   sandwichAsHTML += "<br>";
 
-  sandwichAsHTML += "<u>Sauces</u>: ";
+  sandwichAsHTML += "<b>Sauces</b>: ";
   for (sauce in sandwich['sauces']) {
     sandwichAsHTML += (sandwich['sauces'][sauce] + ", ");
   }
