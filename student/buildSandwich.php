@@ -10,7 +10,14 @@ foreach ($_POST as $key => $value) {
   echo $key;
   echo "</td>";
   echo "<td>";
-  echo $value;
+  if (is_array($value)) {
+    foreach($_POST[$key] as $value) {
+      echo $value;
+      echo ", ";
+    }
+  } else {
+    echo $value;
+  }
   echo "</td>";
   echo "</tr>";
 }
