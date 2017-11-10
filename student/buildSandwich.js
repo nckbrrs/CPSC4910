@@ -1,36 +1,36 @@
 function updatePreview(sandwich) {
   var previewSandwichNode = document.getElementById("previewSandwichDiv");
   var sandwichAsHTML = "";
-  sandwichAsHTML.concat("<u>Bread</u><br>");
-  sandwichAsHTML.concat("<ul><li>", sandwich['bread'], "</li></ul><br>");
+  sandwichAsHTML += "<u>Bread</u><br>";
+  sandwichAsHTML += ("<ul><li>" + sandwich['bread'] + "</li></ul><br>");
 
-  sandwichAsHTML.concat("<u>Meats</u><br>");
-  sandwichAsHTML.concat("<ul>");
+  sandwichAsHTML += "<u>Meats</u><br>";
+  sandwichAsHTML += "<ul>";
   for (meat in sandwich['meats']) {
-    sandwichAsHTML.concat("<li>", sandwich['meats'][meat], "</li>");
+    sandwichAsHTML += ("<li>" + sandwich['meats'][meat] + "</li>");
   }
-  sandwichAsHTML.concat("</ul><br>");
+  sandwichAsHTML += "</ul><br>";
 
-  sandwichAsHTML.concat("<u>Cheeses</u><br>");
-  sandwichAsHTML.concat("<ul>");
+  sandwichAsHTML += "<u>Cheeses</u><br>";
+  sandwichAsHTML += "<ul>";
   for (cheese in sandwich['cheeses']) {
-    sandwichAsHTML.concat("<li>", sandwich['cheeses'][cheese], "</li>");
+    sandwichAsHTML += ("<li>" + sandwich['cheeses'][cheese] + "</li>");
   }
-  sandwichAsHTML.concat("</ul><br>");
+  sandwichAsHTML += "</ul><br>";
 
-  sandwichAsHTML.concat("<u>Veggies</u><br>");
-  sandwichAsHTML.concat("<ul>");
+  sandwichAsHTML += "<u>Veggies</u><br>";
+  sandwichAsHTML += "<ul>";
   for (veggie in sandwich['veggies']) {
-    sandwichAsHTML.concat("<li>", sandwich['veggies'][veggie], "</li>");
+    sandwichAsHTML += ("<li>" + sandwich['veggies'][veggie] + "</li>");
   }
-  sandwichAsHTML.concat("</ul><br>");
+  sandwichAsHTML += "</ul><br>";
 
-  sandwichAsHTML.concat("<u>Sauces</u><br>");
-  sandwichAsHTML.concat("<ul>");
+  sandwichAsHTML += "<u>Sauces</u><br>";
+  sandwichAsHTML += "<ul>";
   for (sauce in sandwich['sauces']) {
-    sandwichAsHTML.concat("<li>", sandwich['sauces'][sauce], "</li>");
+    sandwichAsHTML += ("<li>" + sandwich['sauces'][sauce] + "</li>");
   }
-  sandwichAsHTML.concat("</ul><br>");
+  sandwichAsHTML += "</ul><br>";
 
   previewSandwichNode.innerHTML = sandwichAsHTML;
 }
