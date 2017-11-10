@@ -7,11 +7,11 @@ function onLoad() {
   formNode.onsubmit = buildSandwichOnSubmit;
 
   var sandwich = {
-    bread: "";
-    meats: [];
-    cheeses: [];
-    veggies: [];
-    sauces: [];
+    bread: "",
+    meats: [],
+    cheeses: [],
+    veggies: [],
+    sauces: []
   };
 
   var listOfBreads = document.getElementById("chooseBread").getElementsByTagName("input");
