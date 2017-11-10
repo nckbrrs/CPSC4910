@@ -9,7 +9,7 @@ function updatePreview(sandwich) {
     sandwichAsHTML += (sandwich['meats'][meat] + ", ");
   }
   sandwichAsHTML = str.replace(/,\s*$/, "");
-  sandwichAsHTML += "<br">;
+  sandwichAsHTML += "<br";
 
   sandwichAsHTML += "<u>Cheeses</u>:";
   for (cheese in sandwich['cheeses']) {
