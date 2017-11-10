@@ -1,33 +1,35 @@
-function updatePreview(sandwich) {
+var currentSandwich;
+
+function updatePreview() {
   var previewSandwichNode = document.getElementById("previewSandwichDiv");
   var sandwichAsHTML = "";
   sandwichAsHTML += "<b>Bread</b>: ";
-  sandwichAsHTML += (sandwich['bread'] + "<br>");
+  sandwichAsHTML += (currentSandwich['bread'] + "<br>");
 
   sandwichAsHTML += "<b>Meats</b>: ";
-  for (meat in sandwich['meats']) {
-    sandwichAsHTML += (sandwich['meats'][meat] + ", ");
+  for (meat in currentSandwich['meats']) {
+    sandwichAsHTML += (currentSandwich['meats'][meat] + ", ");
   }
   sandwichAsHTML = sandwichAsHTML.replace(/,\s*$/, "");
   sandwichAsHTML += "<br>";
 
   sandwichAsHTML += "<b>Cheeses</b>: ";
-  for (cheese in sandwich['cheeses']) {
-    sandwichAsHTML += (sandwich['cheeses'][cheese] + ", ");
+  for (cheese in currentSandwich['cheeses']) {
+    sandwichAsHTML += (currentSandwich['cheeses'][cheese] + ", ");
   }
   sandwichAsHTML = sandwichAsHTML.replace(/,\s*$/, "");
   sandwichAsHTML += "<br>";
 
   sandwichAsHTML += "<b>Veggies</b>: ";
-  for (veggie in sandwich['veggies']) {
-    sandwichAsHTML += (sandwich['veggies'][veggie] + ", ");
+  for (veggie in currentSandwich['veggies']) {
+    sandwichAsHTML += (currentSandwich['veggies'][veggie] + ", ");
   }
   sandwichAsHTML = sandwichAsHTML.replace(/,\s*$/, "");
   sandwichAsHTML += "<br>";
 
   sandwichAsHTML += "<b>Sauces</b>: ";
-  for (sauce in sandwich['sauces']) {
-    sandwichAsHTML += (sandwich['sauces'][sauce] + ", ");
+  for (sauce in currentSandwich['sauces']) {
+    sandwichAsHTML += (currentSandwich['sauces'][sauce] + ", ");
   }
   sandwichAsHTML = sandwichAsHTML.replace(/,\s*$/, "");
   sandwichAsHTML += "<br>";
@@ -35,13 +37,46 @@ function updatePreview(sandwich) {
   previewSandwichNode.innerHTML = sandwichAsHTML;
 }
 
+var showError = (msg) =>{
+	var errorNode = document.getElementById("error");
+	if(msg == "" || msg == "false"){
+		// hide error
+		errorNode.style = "visibility: hidden;";
+		return;
+	}
+	// show error
+	errorNode.innerText = msg;
+	errorNode.style = "color: red;";
+};
+
+function validate() {
+	if(currentSandwich['bread'] === "" ||
+  ((currentSandwich['meats'] === []) &&
+  (currentSandwich['cheeses'] === []) &&
+  (currentSandwich['veggies'] === []))) {
+		showError("All fields are required.");
+		return false;
+	}
+
+	showError("false");
+
+	return true;
+}
+
 function buildSandwichOnSubmit() {
-  console.log("hi");
+  if(!validate()) {
+		return false;
+	}
+
+	var buttonNode = document.getElementById("buildSandwichSubmit");
+	buttonNode.innerText = "Submitting, please wait...";
+
+	return true;
 }
 
 function onLoad() {
 
-  var currentSandwich = {
+  currentSandwich = {
     bread: "",
     meats: [],
     cheeses: [],
@@ -122,6 +157,10 @@ function onLoad() {
       updatePreview(currentSandwich);
     }
   }
+
+  var formNode = document.getElementById("buildSandwichForm");
+  formNode.onsubmit = buildSandwichOnSubmit;
+
 };
 
 window.addEventListener("load", onLoad, false);

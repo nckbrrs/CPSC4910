@@ -7,7 +7,6 @@ $sandwich->cheeses = $_POST['cheeses'];
 $sandwich->veggies = $_POST['veggies'];
 $sandwich->sauces = $_POST['sauces'];
 $sandwich = json_encode($sandwich);
-echo $sandwich;
 
 ?>
 
