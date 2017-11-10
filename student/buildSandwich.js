@@ -1,36 +1,36 @@
 function updatePreview(sandwich) {
   var previewSandwichNode = document.getElementById("previewSandwichDiv");
   var sandwichAsHTML = "";
-  sandwichAsHTML += "<u>Bread</u><br>";
-  sandwichAsHTML += ("<ul><li>" + sandwich['bread'] + "</li></ul>");
+  sandwichAsHTML += "<u>Bread</u>:";
+  sandwichAsHTML += (sandwich['bread'] + "<br>");
 
-  sandwichAsHTML += "<u>Meats</u><br>";
-  sandwichAsHTML += "<ul>";
+  sandwichAsHTML += "<u>Meats</u>:";
   for (meat in sandwich['meats']) {
-    sandwichAsHTML += ("<li>" + sandwich['meats'][meat] + "</li><br>");
+    sandwichAsHTML += (sandwich['meats'][meat] + ", ");
   }
-  sandwichAsHTML += "</ul><br>";
+  sandwichAsHTML = str.replace(/,\s*$/, "");
+  sandwichAsHTML += "<br">;
 
-  sandwichAsHTML += "<u>Cheeses</u><br>";
-  sandwichAsHTML += "<ul>";
+  sandwichAsHTML += "<u>Cheeses</u>:";
   for (cheese in sandwich['cheeses']) {
-    sandwichAsHTML += ("<li>" + sandwich['cheeses'][cheese] + "</li><br>");
+    sandwichAsHTML += (sandwich['cheeses'][cheese] + ", ");
   }
-  sandwichAsHTML += "</ul><br>";
+  sandwichAsHTML = str.replace(/,\s*$/, "");
+  sandwichAsHTML += "<br">;
 
-  sandwichAsHTML += "<u>Veggies</u><br>";
-  sandwichAsHTML += "<ul>";
+  sandwichAsHTML += "<u>Veggies</u>:";
   for (veggie in sandwich['veggies']) {
-    sandwichAsHTML += ("<li>" + sandwich['veggies'][veggie] + "</li><br>");
+    sandwichAsHTML += (sandwich['veggies'][veggie] + ", ");
   }
-  sandwichAsHTML += "</ul><br>";
+  sandwichAsHTML = str.replace(/,\s*$/, "");
+  sandwichAsHTML += "<br">;
 
-  sandwichAsHTML += "<u>Sauces</u><br>";
-  sandwichAsHTML += "<ul>";
+  sandwichAsHTML += "<u>Sauces</u>:";
   for (sauce in sandwich['sauces']) {
-    sandwichAsHTML += ("<li>" + sandwich['sauces'][sauce] + "</li><br>");
+    sandwichAsHTML += (sandwich['sauces'][sauce] + ", ");
   }
-  sandwichAsHTML += "</ul><br>";
+  sandwichAsHTML = str.replace(/,\s*$/, "");
+  sandwichAsHTML += "<br">;
 
   previewSandwichNode.innerHTML = sandwichAsHTML;
 }
