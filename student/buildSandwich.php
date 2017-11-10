@@ -62,23 +62,23 @@ echo "</table";
           <div id="chooseMeats">
             <h3>Choose your meats:</h3>
             <ul>
-              <li><input type="checkbox" name="meat" value="turkey" id="turkey" />
+              <li><input type="checkbox" name="meat[]" value="turkey" id="turkey" />
                 <label for="turkey"><img src="/cpsc4910/student/img/meats/turkey.png"/></label>
               </li>
-              <li><input type="checkbox" name="meat" value="ham" id="ham" />
+              <li><input type="checkbox" name="meat[]" value="ham" id="ham" />
                 <label for="ham"><img src="/cpsc4910/student/img/meats/ham.png"/></label>
               </li>
-              <li><input type="checkbox" name="meat" value="salami" id="salami" />
+              <li><input type="checkbox" name="meat[]" value="salami" id="salami" />
                 <label for="salami"><img src="/cpsc4910/student/img/meats/salami.png"/></label>
               </li>
               <br>
-              <li><input type="checkbox" name="meat" value="tuna salad" id="tunaSalad" />
+              <li><input type="checkbox" name="meat[]" value="tuna salad" id="tunaSalad" />
                 <label for="tunaSalad"><img src="/cpsc4910/student/img/meats/tunaSalad.png"/></label>
               </li>
-              <li><input type="checkbox" name="meat" value="chicken salad" id="chickenSalad" />
+              <li><input type="checkbox" name="meat[]" value="chicken salad" id="chickenSalad" />
                 <label for="chickenSalad"><img src="/cpsc4910/student/img/meats/chickenSalad.png"/></label>
               </li>
-              <li><input type="checkbox" name="meat" value="bacon" id="bacon" />
+              <li><input type="checkbox" name="meat[]" value="bacon" id="bacon" />
                 <label for="bacon"><img src="/cpsc4910/student/img/meats/bacon.png"/></label>
               </li>
             </ul>
