@@ -1,0 +1,10 @@
+html {
+  margin: auto;
+  text-align: center;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+#reviewSandwichDiv {
+  border: 1px solid orange;
+}

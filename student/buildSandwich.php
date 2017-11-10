@@ -3,7 +3,7 @@ session_start();
 
 echo "Name: ";
 echo $_SESSION['name'];
-echo " / Phone Number: ";
+echo "\nPhone Number: ";
 echo $_SESSION['phoneNum'];
 
 ?>
@@ -24,7 +24,7 @@ echo $_SESSION['phoneNum'];
     <br>
     <div id="container">
       <div id="leftHalfDiv">
-        <form id="buildSandwichForm" method="post" action="/cpsc4910/student/buildSandwich.php">
+        <form id="buildSandwichForm" method="post" action="/cpsc4910/student/reviewSandwich.php">
           <div id="chooseBread">
             <h3>Choose your bread:</h3>
             <ul>
