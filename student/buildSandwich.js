@@ -8,28 +8,28 @@ function updatePreview(sandwich) {
   for (meat in sandwich['meats']) {
     sandwichAsHTML += (sandwich['meats'][meat] + ", ");
   }
-  sandwichAsHTML = str.replace(/,\s*$/, "");
+  sandwichAsHTML = sandwichAsHTML.replace(/,\s*$/, "");
   sandwichAsHTML += "<br>";
 
   sandwichAsHTML += "<u>Cheeses</u>:";
   for (cheese in sandwich['cheeses']) {
     sandwichAsHTML += (sandwich['cheeses'][cheese] + ", ");
   }
-  sandwichAsHTML = str.replace(/,\s*$/, "");
+  sandwichAsHTML = sandwichAsHTML.replace(/,\s*$/, "");
   sandwichAsHTML += "<br>";
 
   sandwichAsHTML += "<u>Veggies</u>:";
   for (veggie in sandwich['veggies']) {
     sandwichAsHTML += (sandwich['veggies'][veggie] + ", ");
   }
-  sandwichAsHTML = str.replace(/,\s*$/, "");
+  sandwichAsHTML = sandwichAsHTML.replace(/,\s*$/, "");
   sandwichAsHTML += "<br>";
 
   sandwichAsHTML += "<u>Sauces</u>:";
   for (sauce in sandwich['sauces']) {
     sandwichAsHTML += (sandwich['sauces'][sauce] + ", ");
   }
-  sandwichAsHTML = str.replace(/,\s*$/, "");
+  sandwichAsHTML = sandwichAsHTML.replace(/,\s*$/, "");
   sandwichAsHTML += "<br>";
 
   previewSandwichNode.innerHTML = sandwichAsHTML;
