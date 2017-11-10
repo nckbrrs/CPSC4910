@@ -25,17 +25,14 @@ function onLoad() {
   var meatInputs = document.getElementById("chooseMeats").getElementsByTagName("input");
   for (meat in meatInputs) {
     meatInputs[meat].onclick = function() {
-      console.log(this.checked);
-      /*
-      if ((meatInputs[meat]).checked) {
-        console.log(this.value, " got checked\n");
+      if (this.checked) {
         sandwich['meats'].push(this.value);
       } else {
         var index = sandwich['meats'].indexOf(this.value);
         if (index > -1) {
           sandwich['meats'].splice(index, 1);
         }
-      }*/
+      }
       console.log(JSON.stringify(sandwich));
     }
   }
