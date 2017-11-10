@@ -12,7 +12,7 @@ function onLoad() {
     cheeses: [];
     veggies: [];
     sauces: [];
-  }
+  };
 
   var listOfBreads = document.getElementById("chooseBread").getElementsByTagName("input");
   for (bread in listOfBreads) {
