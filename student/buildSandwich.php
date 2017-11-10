@@ -27,23 +27,23 @@ echo $_POST['bread'];
           <div id="chooseBread">
             <h3>Choose your bread:</h3>
             <ul>
-              <li><input type="radio" name="bread" value="whiteBread" id="whiteBread"/>
+              <li><input type="radio" name="bread" value="white" id="whiteBread"/>
                 <label for="whiteBread"><img src="http://boulangeriestmethode.com/data/N2fZiuOP/lesgrains-bleentier-bread-slice.png" /></label>
               </li>
-              <li><input type="radio" name="bread" value="wheatBread" id="wheatBread"/>
+              <li><input type="radio" name="bread" value="wheat" id="wheatBread"/>
                 <label for="wheatBread"><img src="http://boulangeriestmethode.com/data/WpJTN5EL/lesgrains-9grains-bread-slice.png" /></label>
               </li>
-              <li><input type="radio" name="bread" value="sourdoughBread" id="sourdoughBread"/>
+              <li><input type="radio" name="bread" value="sourdough" id="sourdoughBread"/>
                 <label for="sourdoughBread"><img src="http://catalog.auntmillies.com/img/Bakehouse/Sliced/07241S_2.png" /></label>
               </li>
               <br>
-              <li><input type="radio" name="bread" value="flourTortilla" id="flourTortilla"/>
+              <li><input type="radio" name="bread" value="flour tortilla" id="flourTortilla"/>
                 <label for="flourTortilla"><img src="http://www.missionfoodservice.com/imagegen.ashx?image=%2Fmedia%2F1045%2Fheat-pressed-flourcob.png&width=205" /></label>
               </li>
-              <li><input type="radio" name="bread" value="herbTortilla" id="herbTortilla"/>
+              <li><input type="radio" name="bread" value="herb tortilla" id="herbTortilla"/>
                 <label for="herbTortilla"><img src="http://www.missionfoodservice.com/imagegen.ashx?image=%2Fmedia%2F1052%2Fspinach-herb-wrap-20119-10251-cob.png&width=255" /></label>
               </li>
-              <li><input type="radio" name="bread" value="whiteSub" id="whiteSub"/>
+              <li><input type="radio" name="bread" value="white sub" id="whiteSub"/>
                 <label for="whiteSub"><img src="https://www.burryfoods.com/wp-content/uploads/2016/09/70037_SubRoll_Clip.png" /></label>
               </li>
             </ul>
@@ -61,29 +61,38 @@ echo $_POST['bread'];
                 <label for="salami"><img src="http://lorempixel.com/100/100"/></label>
               </li>
               <br>
-              <li><input type="checkbox" value="tunaSalad" id="tunaSalad" />
+              <li><input type="checkbox" value="tuna salad" id="tunaSalad" />
                 <label for="tunaSalad"><img src="http://lorempixel.com/100/100"/></label>
               </li>
-              <li><input type="checkbox" value="chickenSalad" id="chickenSalad" />
+              <li><input type="checkbox" value="chicken salad" id="chickenSalad" />
                 <label for="chickenSalad"><img src="http://lorempixel.com/100/100"/></label>
+              </li>
+              <li><input type="checkbox" value="bacon" id="bacon" />
+                <label for="bacon"><img src="http://lorempixel.com/100/100"/></label>
               </li>
             </ul>
           </div>
           <div id="chooseCheeses">
             <h3>Choose your cheeses:</h3>
             <ul>
+              <li><input type="checkbox" value="american" id="american" />
+                <label for="american"><img src="http://lorempixel.com/100/100" /></label>
+              </li>
               <li><input type="checkbox" value="swiss" id="swiss" />
                 <label for="swiss"><img src="http://lorempixel.com/100/100" /></label>
               </li>
-              <li><input type="checkbox" value="swiss" id="provolone" />
+              <li><input type="checkbox" value="provolone" id="provolone" />
                 <label for="provolone"><img src="http://lorempixel.com/100/100" /></label>
               </li>
+              <br>
               <li><input type="checkbox" value="cheddar" id="cheddar" />
                 <label for="cheddar"><img src="http://lorempixel.com/100/100" /></label>
               </li>
-              <br>
-              <li><input type="checkbox" value="pepperJack" id="pepperJack" />
+              <li><input type="checkbox" value="pepper jack" id="pepperJack" />
                 <label for="pepperJack"><img src="http://lorempixel.com/100/100" /></label>
+              </li>
+              <li><input type="checkbox" value="mozzarella" id="mozzarella" />
+                <label for="mozzarella"><img src="http://lorempixel.com/100/100" /></label>
               </li>
             </ul>
           </div>
@@ -96,36 +105,62 @@ echo $_POST['bread'];
               <li><input type="checkbox" value="tomato" id="tomato" />
                 <label for="tomato"><img src="http://lorempixel.com/100/100" /></label>
               </li>
-              <li><input type="checkbox" value="spinach" id="spinach" />
-                <label for="spinach"><img src="http://lorempixel.com/100/100" /></label>
-              </li>
-              <br>
               <li><input type="checkbox" value="onions" id="onions" />
                 <label for="onions"><img src="http://lorempixel.com/100/100" /></label>
               </li>
+              <br>
+              <li><input type="checkbox" value="spinach" id="spinach" />
+                <label for="spinach"><img src="http://lorempixel.com/100/100" /></label>
+              </li>
               <li><input type="checkbox" value="cucumbers" id="cucumbers" />
                 <label for="cucumbers"><img src="http://lorempixel.com/100/100" /></label>
+              </li>
+              <li><input type="checkbox" value="black olives" id="blackOlives" />
+                <label for="blackOlives"><img src="http://lorempixel.com/100/100" /></label>
+              </li>
+              <br>
+              <li><input type="checkbox" value="green peppers" id="greenPeppers" />
+                <label for="greenPeppers"><img src="http://lorempixel.com/100/100" /></label>
+              </li>
+              <li><input type="checkbox" value="banana peppers" id="bananaPeppers" />
+                <label for="bananaPeppers"><img src="http://lorempixel.com/100/100" /></label>
+              </li>
+              <li><input type="checkbox" value="jalapeños" id="jalapeños" />
+                <label for="jalapeños"><img src="http://lorempixel.com/100/100" /></label>
               </li>
             </ul>
           </div>
           <div id="chooseSauces">
             <h3>Choose your sauce(s):</h3>
             <ul>
+              <li><input type="checkbox" value="mayonnaise" id="mayonnaise" />
+                <label for="mayonnaise"><img src="http://lorempixel.com/100/100" /></label>
+              </li>
               <li><input type="checkbox" value="ranch" id="ranch" />
                 <label for="ranch"><img src="http://lorempixel.com/100/100" /></label>
               </li>
               <li><input type="checkbox" value="mustard" id="mustard" />
                 <label for="mustard"><img src="http://lorempixel.com/100/100" /></label>
               </li>
+              <br>
               <li><input type="checkbox" value="chipotle" id="chipotle" />
                 <label for="chipotle"><img src="http://lorempixel.com/100/100" /></label>
               </li>
-              <br>
               <li><input type="checkbox" value="olive oil" id="oliveOil" />
                 <label for="oliveOil"><img src="http://lorempixel.com/100/100" /></label>
               </li>
-              <li><input type="checkbox" value="mayonnaise" id="mayonnaise" />
-                <label for="mayonnaise"><img src="http://lorempixel.com/100/100" /></label>
+              <li><input type="checkbox" value="vinegar" id="vinegar" />
+                <label for="vinegar"><img src="http://lorempixel.com/100/100" /></label>
+              </li>
+              <br>
+              <li><input type="checkbox" value="barbecue" id="barbecue" />
+                <label for="barbecue"><img src="http://lorempixel.com/100/100" /></label>
+              </li>
+              <li><input type="checkbox" value="buffalo" id="buffalo" />
+                <label for="buffalo"><img src="http://lorempixel.com/100/100" /></label>
+              </li>
+              <li><input type="checkbox" value="honey mustard" id="honeyMustard" />
+                <label for="honeyMustard"><img src="http://lorempixel.com/100/100" /></label>
               </li>
             </ul>
           </div>
