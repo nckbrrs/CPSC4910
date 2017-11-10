@@ -120,10 +120,6 @@ function onLoad() {
       updatePreview(currentSandwich);
     }
   }
-
-  var formNode = document.getElementById("buildSandwichForm");
-  formNode.onsubmit = buildSandwichOnSubmit;
-
 };
 
 window.addEventListener("load", onLoad, false);
