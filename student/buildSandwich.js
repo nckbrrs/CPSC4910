@@ -26,6 +26,7 @@ function onLoad() {
   for (meat in meatInputs) {
     meatInputs[meat].onclick = function() {
       if (meatInputs[meat].checked) {
+        console.log(this.value, " got checked\n");
         sandwich['meats'].push(this.value);
       } else {
         var index = sandwich['meats'].indexOf(this.value);
