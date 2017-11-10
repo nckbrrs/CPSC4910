@@ -6,6 +6,8 @@ function onLoad() {
   var formNode = document.getElementById("buildSandwichForm");
   formNode.onsubmit = buildSandwichOnSubmit;
 
+  var previewSandwichNode = document.getElementById("previewSandwichDiv");
+
   var sandwich = {
     bread: "",
     meats: [],
@@ -22,7 +24,7 @@ function onLoad() {
       } else {
         sandwich['bread'] = "";
       }
-      console.log(JSON.stringify(sandwich));
+      previewSandwichNode.innerHTML = JSON.stringify(sandwich);
     }
   }
 
