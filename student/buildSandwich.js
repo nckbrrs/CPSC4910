@@ -1,15 +1,18 @@
+function buildSandwichOnSubmit() {
+  console.log("hi");
+}
+
 function onLoad() {
   var formNode = document.getElementById("buildSandwichForm");
-  //formNode.onsubmit = buildSandwichOnSubmit;
+  formNode.onsubmit = buildSandwichOnSubmit;
 
   var listOfBreads = document.getElementById("chooseBread").getElementsByTagName("input");
-  for (i=0; i<listOfBreads.length; i++) {
-    console.log(listOfBreads[i].id);
+  for (bread in listOfBreads) {
+    listOfBreads[bread].onclick = function() {
+      console.log(this.value + "has just been clicked\n");
+    }
   }
 
-  if (errorMessage != "false") {
-    showError(errorMessage);
-  }
 };
 
 window.addEventListener("load", onLoad, false);
