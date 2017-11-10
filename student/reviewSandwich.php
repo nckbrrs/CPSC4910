@@ -2,10 +2,10 @@
 session_start();
 
 $sandwich->bread = $_POST['bread'];
-$sandwich->meats = $_POST['meats[]'];
-$sandwich->cheeses = $_POST['cheeses[]'];
-$sandwich->veggies = $_POST['veggies[]'];
-$sandwich->sauces = $_POST['sauces[]'];
+$sandwich->meats = array();$_POST['meats'];
+$sandwich->cheeses = array();$_POST['cheeses'];
+$sandwich->veggies = array();$_POST['veggies'];
+$sandwich->sauces = array();$_POST['sauces'];
 $sandwich = json_encode($sandwich);
 echo $sandwich;
 
