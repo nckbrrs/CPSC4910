@@ -183,10 +183,10 @@ echo "</table";
               </li>
             </ul>
           </div>
+          <input type="hidden" name="buildSandwichFlag" value="1">
+          <button id="buildSandwichSubmit" type="submit" name="buildSandwichSubmit">Review your order</button>
+        </form>
       </div>
-      <input type="hidden" name="buildSandwichFlag" value="1">
-      <button id="buildSandwichSubmit" type="submit" name="buildSandwichSubmit">Review your order</button>
-      </form>
       <div id="rightHalfDiv">
         <h3>Your current sandwich:</h3>
         <div id="previewSandwichDiv">
