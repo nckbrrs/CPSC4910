@@ -7,28 +7,28 @@ function updatePreview(sandwich) {
   sandwichAsHTML += "<u>Meats</u><br>";
   sandwichAsHTML += "<ul>";
   for (meat in sandwich['meats']) {
-    sandwichAsHTML += ("<li>" + sandwich['meats'][meat] + "</li>");
+    sandwichAsHTML += ("<li>" + sandwich['meats'][meat] + "</li><br>");
   }
   sandwichAsHTML += "</ul><br>";
 
   sandwichAsHTML += "<u>Cheeses</u><br>";
   sandwichAsHTML += "<ul>";
   for (cheese in sandwich['cheeses']) {
-    sandwichAsHTML += ("<li>" + sandwich['cheeses'][cheese] + "</li>");
+    sandwichAsHTML += ("<li>" + sandwich['cheeses'][cheese] + "</li><br>");
   }
   sandwichAsHTML += "</ul><br>";
 
   sandwichAsHTML += "<u>Veggies</u><br>";
   sandwichAsHTML += "<ul>";
   for (veggie in sandwich['veggies']) {
-    sandwichAsHTML += ("<li>" + sandwich['veggies'][veggie] + "</li>");
+    sandwichAsHTML += ("<li>" + sandwich['veggies'][veggie] + "</li><br>");
   }
   sandwichAsHTML += "</ul><br>";
 
   sandwichAsHTML += "<u>Sauces</u><br>";
   sandwichAsHTML += "<ul>";
   for (sauce in sandwich['sauces']) {
-    sandwichAsHTML += ("<li>" + sandwich['sauces'][sauce] + "</li>");
+    sandwichAsHTML += ("<li>" + sandwich['sauces'][sauce] + "</li><br>");
   }
   sandwichAsHTML += "</ul><br>";
 
