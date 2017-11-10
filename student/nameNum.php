@@ -16,10 +16,6 @@ if(isset($_POST['nameNumFlag'])) {
   header("Location: /cpsc4910/student/buildSandwich.php", true, 302);
 }
 
-// FOR TESTING ONLY VVV
-$_SESSION = array();
-session_destroy();
-// FOR TESTING ONLY ^^^
 ?>
 
 <!DOCTYPE html>
