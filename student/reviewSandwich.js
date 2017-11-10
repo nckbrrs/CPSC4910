@@ -37,7 +37,7 @@ function populateReviewDiv() {
 }
 
 function onLoad() {
-  popuplateReviewDiv();
+  populateReviewDiv();
 }
 
 window.addEventListener("load", onLoad, false);
