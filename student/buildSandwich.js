@@ -37,43 +37,6 @@ function updatePreview() {
   previewSandwichNode.innerHTML = sandwichAsHTML;
 }
 
-var showError = (msg) =>{
-	var errorNode = document.getElementById("error");
-	if(msg == "" || msg == "false"){
-		// hide error
-		errorNode.style = "visibility: hidden;";
-		return;
-	}
-	// show error
-	errorNode.innerText = msg;
-	errorNode.style = "color: red;";
-};
-
-function validate() {
-	if(currentSandwich['bread'] === "" ||
-  ((currentSandwich['meats'] === []) &&
-  (currentSandwich['cheeses'] === []) &&
-  (currentSandwich['veggies'] === []))) {
-		showError("All fields are required.");
-		return false;
-	}
-
-	showError("false");
-
-	return true;
-}
-
-function buildSandwichOnSubmit() {
-  if(!validate()) {
-		return false;
-	}
-
-	var buttonNode = document.getElementById("buildSandwichSubmit");
-	buttonNode.innerText = "Submitting, please wait...";
-
-	return true;
-}
-
 function onLoad() {
 
   currentSandwich = {

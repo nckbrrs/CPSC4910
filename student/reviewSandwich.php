@@ -24,7 +24,6 @@ $sandwich = json_encode($sandwich);
     <h3>Make sure your order is correct, and then click "Submit Order"</h3>
     <div id="reviewSandwichDiv">
       <h3>Your sandwich order:</h3>
-
     </div>
     <script type="text/javascript">var sandwich = "<?php echo $sandwich; ?>";</script>
   </body>
