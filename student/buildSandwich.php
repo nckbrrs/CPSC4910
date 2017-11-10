@@ -1,28 +1,8 @@
 <?php
 session_start();
-$_SESSION = array();
 
-echo "<table>";
-foreach ($_POST as $key => $value) {
-  if ($key == "bread" || $key == "meats" || $key == "veggies" || $key == "cheeses" || $key == "sauces") {
-    echo "<tr>";
-    echo "<td>";
-    echo $key;
-    echo "</td>";
-    echo "<td>";
-    if (is_array($value)) {
-      foreach($_POST[$key] as $value) {
-        echo $value;
-        echo ", ";
-      }
-    } else {
-      echo $value;
-    }
-    echo "</td>";
-    echo "</tr>";
-  }
-}
-echo "</table";
+echo "Hello, " + $_SESSION['name'] + "!\n";
+
 
 ?>
 
