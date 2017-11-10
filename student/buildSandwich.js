@@ -1,3 +1,40 @@
+function updatePreview(sandwich) {
+  var previewSandwichNode = document.getElementById("previewSandwichDiv");
+  var sandwichAsHTML = "";
+  sandwichAsHTML.concat("<u>Bread</u><br>");
+  sandwichAsHTML.concat("<ul><li>", sandwich['bread'], "</li></ul><br>");
+
+  sandwichAsHTML.concat("<u>Meats</u><br>");
+  sandwichAsHTML.concat("<ul>");
+  for (meat in sandwich['meats']) {
+    sandwichAsHTML.concat("<li>", sandwich['meats'][meat], "</li>");
+  }
+  sandwichAsHTML.concat("</ul><br>");
+
+  sandwichAsHTML.concat("<u>Cheeses</u><br>");
+  sandwichAsHTML.concat("<ul>");
+  for (cheese in sandwich['cheeses']) {
+    sandwichAsHTML.concat("<li>", sandwich['cheeses'][cheese], "</li>");
+  }
+  sandwichAsHTML.concat("</ul><br>");
+
+  sandwichAsHTML.concat("<u>Veggies</u><br>");
+  sandwichAsHTML.concat("<ul>");
+  for (veggie in sandwich['veggies']) {
+    sandwichAsHTML.concat("<li>", sandwich['veggies'][veggie], "</li>");
+  }
+  sandwichAsHTML.concat("</ul><br>");
+
+  sandwichAsHTML.concat("<u>Sauces</u><br>");
+  sandwichAsHTML.concat("<ul>");
+  for (sauce in sandwich['sauces']) {
+    sandwichAsHTML.concat("<li>", sandwich['sauces'][sauce], "</li>");
+  }
+  sandwichAsHTML.concat("</ul><br>");
+
+  previewSnadwichNode.innerHTML = sandwichAsHTML;
+}
+
 function buildSandwichOnSubmit() {
   console.log("hi");
 }
@@ -6,9 +43,7 @@ function onLoad() {
   var formNode = document.getElementById("buildSandwichForm");
   formNode.onsubmit = buildSandwichOnSubmit;
 
-  var previewSandwichNode = document.getElementById("previewSandwichDiv");
-
-  var sandwich = {
+  var currentSandwich = {
     bread: "",
     meats: [],
     cheeses: [],
@@ -20,11 +55,11 @@ function onLoad() {
   for (bread in breadInputs) {
     breadInputs[bread].onclick = function() {
       if (this.checked) {
-        sandwich['bread'] = this.value;
+        currentSandwich['bread'] = this.value;
       } else {
-        sandwich['bread'] = "";
+        currentSandwich['bread'] = "";
       }
-      previewSandwichNode.innerHTML = JSON.stringify(sandwich);
+      updatePreview(currentSandwich);
     }
   }
 
@@ -32,14 +67,14 @@ function onLoad() {
   for (meat in meatInputs) {
     meatInputs[meat].onclick = function() {
       if (this.checked) {
-        sandwich['meats'].push(this.value);
+        currentSandwich['meats'].push(this.value);
       } else {
         let index = sandwich['meats'].indexOf(this.value);
         if (index > -1) {
-          sandwich['meats'].splice(index, 1);
+          currentSandwich['meats'].splice(index, 1);
         }
       }
-      previewSandwichNode.innerHTML = JSON.stringify(sandwich);
+      updatePreview(currentSandwich);
     }
   }
 
@@ -47,14 +82,14 @@ function onLoad() {
   for (cheese in cheeseInputs) {
     cheeseInputs[cheese].onclick = function() {
       if (this.checked) {
-        sandwich['cheeses'].push(this.value);
+        currentSandwich['cheeses'].push(this.value);
       } else {
-        let index = sandwich['cheeses'].indexOf(this.value);
+        let index = currentSandwich['cheeses'].indexOf(this.value);
         if (index > -1) {
-          sandwich['cheeses'].splice(index, 1);
+          currentSandwich['cheeses'].splice(index, 1);
         }
       }
-      previewSandwichNode.innerHTML = JSON.stringify(sandwich);
+      updatePreview(currentSandwich);
     }
   }
 
@@ -62,14 +97,14 @@ function onLoad() {
   for (veggie in veggieInputs) {
     veggieInputs[veggie].onclick = function() {
       if (this.checked) {
-        sandwich['veggies'].push(this.value);
+        currentSandwich['veggies'].push(this.value);
       } else {
-        let index = sandwich['veggies'].indexOf(this.value);
+        let index = currentSandwich['veggies'].indexOf(this.value);
         if (index > -1) {
-          sandwich['veggies'].splice(index, 1);
+          currentSandwich['veggies'].splice(index, 1);
         }
       }
-      previewSandwichNode.innerHTML = JSON.stringify(sandwich);
+      updatePreview(currentSandwich);
     }
   }
 
@@ -77,14 +112,14 @@ function onLoad() {
   for (sauce in sauceInputs) {
     sauceInputs[sauce].onclick = function() {
       if (this.checked) {
-        sandwich['sauces'].push(this.value);
+        currentSandwich['sauces'].push(this.value);
       } else {
-        let index = sandwich['sauces'].indexOf(this.value);
+        let index = currentSandwich['sauces'].indexOf(this.value);
         if (index > -1) {
-          sandwich['sauces'].splice(index, 1);
+          currentSandwich['sauces'].splice(index, 1);
         }
       }
-      previewSandwichNode.innerHTML = JSON.stringify(sandwich);
+      updatePreview(currentSandwich);
     }
   }
 };
