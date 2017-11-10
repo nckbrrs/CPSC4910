@@ -1,7 +1,7 @@
 function onLoad() {
   var reviewSandwichNode = document.getElementById("reviewSandwichDiv");
 
-  var sandwichAsHTML = "";
+  var sandwichAsHTML = "<br>";
   sandwichAsHTML += "<b>Bread</b>: ";
   sandwichAsHTML += (sandwich['bread'] + "<br>");
 
@@ -31,7 +31,7 @@ function onLoad() {
     sandwichAsHTML += (sandwich['sauces'][sauce] + ", ");
   }
   sandwichAsHTML = sandwichAsHTML.replace(/,\s*$/, "");
-  sandwichAsHTML += "<br>";
+  sandwichAsHTML += "<br><br>";
 
   reviewSandwichNode.innerHTML = sandwichAsHTML;
 }
