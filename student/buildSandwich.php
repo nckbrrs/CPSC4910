@@ -28,23 +28,23 @@ echo $_POST['bread'];
             <h3>Choose your bread:</h3>
             <ul>
               <li><input type="radio" name="bread" value="white" id="whiteBread"/>
-                <label for="whiteBread"><img src="http://boulangeriestmethode.com/data/N2fZiuOP/lesgrains-bleentier-bread-slice.png" /></label>
+                <label for="whiteBread"><img src="/cpsc4910/student/img/breads/white" /></label>
               </li>
               <li><input type="radio" name="bread" value="wheat" id="wheatBread"/>
-                <label for="wheatBread"><img src="http://boulangeriestmethode.com/data/WpJTN5EL/lesgrains-9grains-bread-slice.png" /></label>
+                <label for="wheatBread"><img src="/cpsc4910/student/img/breads/wheat" /></label>
               </li>
               <li><input type="radio" name="bread" value="sourdough" id="sourdoughBread"/>
-                <label for="sourdoughBread"><img src="http://catalog.auntmillies.com/img/Bakehouse/Sliced/07241S_2.png" /></label>
+                <label for="sourdoughBread"><img src="/cpsc4910/student/img/breads/sourdough" /></label>
               </li>
               <br>
               <li><input type="radio" name="bread" value="flour tortilla" id="flourTortilla"/>
-                <label for="flourTortilla"><img src="http://www.missionfoodservice.com/imagegen.ashx?image=%2Fmedia%2F1045%2Fheat-pressed-flourcob.png&width=205" /></label>
+                <label for="flourTortilla"><img src="/cpsc4910/student/img/breads/flourTortilla" /></label>
               </li>
               <li><input type="radio" name="bread" value="herb tortilla" id="herbTortilla"/>
-                <label for="herbTortilla"><img src="http://www.missionfoodservice.com/imagegen.ashx?image=%2Fmedia%2F1052%2Fspinach-herb-wrap-20119-10251-cob.png&width=255" /></label>
+                <label for="herbTortilla"><img src="/cpsc4910/student/img/breads/herbTortilla" /></label>
               </li>
               <li><input type="radio" name="bread" value="white sub" id="whiteSub"/>
-                <label for="whiteSub"><img src="https://www.burryfoods.com/wp-content/uploads/2016/09/70037_SubRoll_Clip.png" /></label>
+                <label for="whiteSub"><img src="/cpsc4910/student/img/breads/whiteSub" /></label>
               </li>
             </ul>
           </div>
@@ -52,23 +52,23 @@ echo $_POST['bread'];
             <h3>Choose your meats:</h3>
             <ul>
               <li><input type="checkbox" value="turkey" id="turkey" />
-                <label for="turkey"><img src="http://lorempixel.com/100/100"/></label>
+                <label for="turkey"><img src="/cpsc4910/student/img/meats/turkey"/></label>
               </li>
               <li><input type="checkbox" value="ham" id="ham" />
-                <label for="ham"><img src="http://lorempixel.com/100/100"/></label>
+                <label for="ham"><img src="/cpsc4910/student/img/meats/ham"/></label>
               </li>
               <li><input type="checkbox" value="salami" id="salami" />
-                <label for="salami"><img src="http://lorempixel.com/100/100"/></label>
+                <label for="salami"><img src="/cpsc4910/student/img/meats/salami"/></label>
               </li>
               <br>
               <li><input type="checkbox" value="tuna salad" id="tunaSalad" />
-                <label for="tunaSalad"><img src="http://lorempixel.com/100/100"/></label>
+                <label for="tunaSalad"><img src="/cpsc4910/student/img/meats/tunaSalad"/></label>
               </li>
               <li><input type="checkbox" value="chicken salad" id="chickenSalad" />
-                <label for="chickenSalad"><img src="http://lorempixel.com/100/100"/></label>
+                <label for="chickenSalad"><img src="/cpsc4910/student/img/meats/chickenSalad"/></label>
               </li>
               <li><input type="checkbox" value="bacon" id="bacon" />
-                <label for="bacon"><img src="http://lorempixel.com/100/100"/></label>
+                <label for="bacon"><img src="/cpsc4910/student/img/meats/bacon"/></label>
               </li>
             </ul>
           </div>
@@ -76,23 +76,23 @@ echo $_POST['bread'];
             <h3>Choose your cheeses:</h3>
             <ul>
               <li><input type="checkbox" value="american" id="american" />
-                <label for="american"><img src="http://lorempixel.com/100/100" /></label>
+                <label for="american"><img src="/cpsc4910/student/img/cheeses/american" /></label>
               </li>
               <li><input type="checkbox" value="swiss" id="swiss" />
-                <label for="swiss"><img src="http://lorempixel.com/100/100" /></label>
+                <label for="swiss"><img src="/cpsc4910/student/img/cheeses/swiss" /></label>
               </li>
               <li><input type="checkbox" value="provolone" id="provolone" />
-                <label for="provolone"><img src="http://lorempixel.com/100/100" /></label>
+                <label for="provolone"><img src="/cpsc4910/student/img/cheeses/provolone" /></label>
               </li>
               <br>
               <li><input type="checkbox" value="cheddar" id="cheddar" />
-                <label for="cheddar"><img src="http://lorempixel.com/100/100" /></label>
+                <label for="cheddar"><img src="/cpsc4910/student/img/cheeses/cheddar" /></label>
               </li>
               <li><input type="checkbox" value="pepper jack" id="pepperJack" />
-                <label for="pepperJack"><img src="http://lorempixel.com/100/100" /></label>
+                <label for="pepperJack"><img src="/cpsc4910/student/img/cheeses/pepperJack" /></label>
               </li>
               <li><input type="checkbox" value="mozzarella" id="mozzarella" />
-                <label for="mozzarella"><img src="http://lorempixel.com/100/100" /></label>
+                <label for="mozzarella"><img src="/cpsc4910/student/img/cheeses/mozzarella" /></label>
               </li>
             </ul>
           </div>
@@ -100,33 +100,33 @@ echo $_POST['bread'];
             <h3>Choose your veggies:</h3>
             <ul>
               <li><input type="checkbox" value="lettuce" id="lettuce" />
-                <label for="lettuce"><img src="http://lorempixel.com/100/100" /></label>
+                <label for="lettuce"><img src="/cpsc4910/student/img/veggies/lettuce" /></label>
               </li>
               <li><input type="checkbox" value="tomato" id="tomato" />
-                <label for="tomato"><img src="http://lorempixel.com/100/100" /></label>
+                <label for="tomato"><img src="/cpsc4910/student/img/veggies/tomato" /></label>
               </li>
               <li><input type="checkbox" value="onions" id="onions" />
-                <label for="onions"><img src="http://lorempixel.com/100/100" /></label>
+                <label for="onions"><img src="/cpsc4910/student/img/veggies/onions" /></label>
               </li>
               <br>
               <li><input type="checkbox" value="spinach" id="spinach" />
-                <label for="spinach"><img src="http://lorempixel.com/100/100" /></label>
+                <label for="spinach"><img src="/cpsc4910/student/img/veggies/spinach" /></label>
               </li>
               <li><input type="checkbox" value="cucumbers" id="cucumbers" />
-                <label for="cucumbers"><img src="http://lorempixel.com/100/100" /></label>
+                <label for="cucumbers"><img src="/cpsc4910/student/img/veggies/cucumbers" /></label>
               </li>
               <li><input type="checkbox" value="black olives" id="blackOlives" />
-                <label for="blackOlives"><img src="http://lorempixel.com/100/100" /></label>
+                <label for="blackOlives"><img src="/cpsc4910/student/img/veggies/blackOlives" /></label>
               </li>
               <br>
               <li><input type="checkbox" value="green peppers" id="greenPeppers" />
-                <label for="greenPeppers"><img src="http://lorempixel.com/100/100" /></label>
-              </li>
-              <li><input type="checkbox" value="banana peppers" id="bananaPeppers" />
-                <label for="bananaPeppers"><img src="http://lorempixel.com/100/100" /></label>
+                <label for="greenPeppers"><img src="/cpsc4910/student/img/veggies/greenPeppers" /></label>
               </li>
               <li><input type="checkbox" value="jalapeños" id="jalapeños" />
-                <label for="jalapeños"><img src="http://lorempixel.com/100/100" /></label>
+                <label for="jalapeños"><img src="/cpsc4910/student/img/veggies/jalapenos" /></label>
+              </li>
+              <li><input type="checkbox" value="pickles" id="pickles" />
+                <label for="pickles"><img src="/cpsc4910/student/img/veggies/pickles" /></label>
               </li>
             </ul>
           </div>
@@ -134,33 +134,33 @@ echo $_POST['bread'];
             <h3>Choose your sauce(s):</h3>
             <ul>
               <li><input type="checkbox" value="mayonnaise" id="mayonnaise" />
-                <label for="mayonnaise"><img src="http://lorempixel.com/100/100" /></label>
+                <label for="mayonnaise"><img src="/cpsc4910/student/img/sauces/mayonnaise" /></label>
               </li>
               <li><input type="checkbox" value="ranch" id="ranch" />
-                <label for="ranch"><img src="http://lorempixel.com/100/100" /></label>
+                <label for="ranch"><img src="/cpsc4910/student/img/sauces/ranch" /></label>
               </li>
               <li><input type="checkbox" value="mustard" id="mustard" />
-                <label for="mustard"><img src="http://lorempixel.com/100/100" /></label>
+                <label for="mustard"><img src="/cpsc4910/student/img/sauces/mustard" /></label>
               </li>
               <br>
               <li><input type="checkbox" value="chipotle" id="chipotle" />
-                <label for="chipotle"><img src="http://lorempixel.com/100/100" /></label>
+                <label for="chipotle"><img src="/cpsc4910/student/img/sauces/chipotle" /></label>
               </li>
-              <li><input type="checkbox" value="olive oil" id="oliveOil" />
-                <label for="oliveOil"><img src="http://lorempixel.com/100/100" /></label>
+              <li><input type="checkbox" value="oil and vinegar" id="oilAndVinegar" />
+                <label for="oilAndVinegar"><img src="/cpsc4910/student/img/sauces/oilAndVinegar" /></label>
               </li>
-              <li><input type="checkbox" value="vinegar" id="vinegar" />
-                <label for="vinegar"><img src="http://lorempixel.com/100/100" /></label>
+              <li><input type="checkbox" value="caesar" id="caesar" />
+                <label for="caesar"><img src="/cpsc4910/student/img/sauces/caesar" /></label>
               </li>
               <br>
               <li><input type="checkbox" value="barbecue" id="barbecue" />
-                <label for="barbecue"><img src="http://lorempixel.com/100/100" /></label>
+                <label for="barbecue"><img src="/cpsc4910/student/img/sauces/barbecue" /></label>
               </li>
               <li><input type="checkbox" value="buffalo" id="buffalo" />
-                <label for="buffalo"><img src="http://lorempixel.com/100/100" /></label>
+                <label for="buffalo"><img src="/cpsc4910/student/img/sauces/buffalo" /></label>
               </li>
               <li><input type="checkbox" value="honey mustard" id="honeyMustard" />
-                <label for="honeyMustard"><img src="http://lorempixel.com/100/100" /></label>
+                <label for="honeyMustard"><img src="/cpsc4910/student/img/sauces/honeyMustard" /></label>
               </li>
             </ul>
           </div>
