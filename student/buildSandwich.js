@@ -2,7 +2,7 @@ function updatePreview(sandwich) {
   var previewSandwichNode = document.getElementById("previewSandwichDiv");
   var sandwichAsHTML = "";
   sandwichAsHTML += "<u>Bread</u><br>";
-  sandwichAsHTML += ("<ul><li>" + sandwich['bread'] + "</li></ul><br>");
+  sandwichAsHTML += ("<ul><li>" + sandwich['bread'] + "</li></ul>");
 
   sandwichAsHTML += "<u>Meats</u><br>";
   sandwichAsHTML += "<ul>";
