@@ -40,8 +40,6 @@ function buildSandwichOnSubmit() {
 }
 
 function onLoad() {
-  var formNode = document.getElementById("buildSandwichForm");
-  formNode.onsubmit = buildSandwichOnSubmit;
 
   var currentSandwich = {
     bread: "",
@@ -50,6 +48,8 @@ function onLoad() {
     veggies: [],
     sauces: []
   };
+
+  updatePreview(currentSandwich);
 
   var breadInputs = document.getElementById("chooseBread").getElementsByTagName("input");
   for (bread in breadInputs) {
