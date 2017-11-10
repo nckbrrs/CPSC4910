@@ -1,7 +1,9 @@
 <?php
 session_start();
 
-echo "Hello, " + $_SESSION['name'] + "!\n";
+echo "Hello, ";
+echo $_SESSION['name'];
+echo "!\n";
 
 
 ?>
