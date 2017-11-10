@@ -25,7 +25,7 @@ function onLoad() {
   var meatInputs = document.getElementById("chooseMeats").getElementsByTagName("input");
   for (meat in meatInputs) {
     meatInputs[meat].onclick = function() {
-      if (meatInputs[meat].checked) {
+      if ((meatInputs[meat]).checked) {
         console.log(this.value, " got checked\n");
         sandwich['meats'].push(this.value);
       } else {
