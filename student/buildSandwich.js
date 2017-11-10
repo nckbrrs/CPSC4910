@@ -1,6 +1,6 @@
 function onLoad() {
   var formNode = document.getElementById("buildSandwichForm");
-  formNode.onsubmit = buildSandwichOnSubmit;
+  //formNode.onsubmit = buildSandwichOnSubmit;
 
   var listOfBreads = document.getElementById("chooseBread").getElementsByTagName("input");
   for (i=0; i<listOfBreads.length; i++) {
