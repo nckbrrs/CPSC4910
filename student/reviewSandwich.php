@@ -26,6 +26,6 @@ $sandwich = json_encode($sandwich);
       <h3>Your sandwich order:</h3>
     </div>
     <script type="text/javascript" src="/cpsc4910/student/reviewSandwich.js"></script>
-    <script type="text/javascript">var sandwich = "<?php echo $sandwich; ?>";</script>
+    <script type="text/javascript">var sandwich = <?php echo $sandwich; ?>;</script>
   </body>
 </html>
