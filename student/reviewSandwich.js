@@ -32,6 +32,8 @@ function onLoad() {
   }
   sandwichAsHTML = sandwichAsHTML.replace(/,\s*$/, "");
   sandwichAsHTML += "<br>";
+
+  reviewSandwichNode.innerHTML = sandwichAsHTML;
 }
 
 window.addEventListener("load", onLoad, false);
