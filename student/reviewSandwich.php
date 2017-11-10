@@ -24,6 +24,9 @@ $sandwich = json_encode($sandwich);
     <h3>Make sure your order is correct, and then click "Submit Order"</h3>
     <div id="reviewSandwichDiv">
     </div>
+    <form action="/cpsc4910/student/success.html">
+        <input type="submit" value="Confirm Order" />
+    </form>
     <script type="text/javascript" src="/cpsc4910/student/reviewSandwich.js"></script>
     <script type="text/javascript">var sandwich = <?php echo $sandwich; ?>;</script>
   </body>

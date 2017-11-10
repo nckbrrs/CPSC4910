@@ -1,4 +1,4 @@
-function onLoad() {
+function populateReviewDiv() {
   var reviewSandwichNode = document.getElementById("reviewSandwichDiv");
 
   var sandwichAsHTML = "<br>";
@@ -34,6 +34,10 @@ function onLoad() {
   sandwichAsHTML += "<br><br>";
 
   reviewSandwichNode.innerHTML = sandwichAsHTML;
+}
+
+function onLoad() {
+  popuplateReviewDiv();
 }
 
 window.addEventListener("load", onLoad, false);
