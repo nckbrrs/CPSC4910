@@ -1,5 +1,4 @@
 # Task List
-CPSC 4910 / Seminar in Professional Issues II / Clemson University / Herzog / Fall 2017
 
 Student-side front-end
 - page where student enters name and phone number (DONE)
