@@ -1,20 +1,6 @@
 <?php
 session_start();
-
-// if name and number already stored, redirect to sandwich-builder.php
-if (isset($_SESSION['name']) && isset($_SESSION['phoneNum'])) {
-  header("Location: /cpsc4910/student/buildSandwich.php", true, 302);
-}
-
-// to be written to JS later in order to decide whether to render an error
-$errorMessage = "false";
-
-// form has been submitted, so save session variables
-if(isset($_POST['nameNumFlag'])) {
-  $_SESSION['name'] = $_POST['name'];
-  $_SESSION['phoneNum'] = $_POST['phoneNum'];
-  header("Location: /cpsc4910/student/buildSandwich.php", true, 302);
-}
+$_SESSION = array();
 
 ?>
 
@@ -40,7 +26,7 @@ if(isset($_POST['nameNumFlag'])) {
     <br>
     <p id="instructions">Enter your name and phone number to begin:</p>
     <div id="nameNumDiv">
-      <form id="nameNumForm" method="post" action="/cpsc4910/student/nameNum.php">
+      <form id="nameNumForm" method="post" action="/cpsc4910/student/buildSandwich.php">
         <label>Name: <input type="text" name="name" id="name"></label><br>
         <label>Phone Number: <input type="tel" name="phoneNum" id="phoneNum"></label><br>
         <input type="hidden" name="nameNumFlag" value="1">

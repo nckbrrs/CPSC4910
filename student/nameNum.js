@@ -36,9 +36,6 @@ function nameNumOnSubmit() {
 function onLoad() {
   var formNode = document.getElementById("nameNumForm");
   formNode.onsubmit = nameNumOnSubmit;
-  if (errorMessage != "false") {
-    showError(errorMessage);
-  }
 };
 
 window.addEventListener("load", onLoad, false);
