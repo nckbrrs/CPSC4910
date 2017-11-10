@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-echo "Hello, ";
+echo "Name: ";
 echo $_SESSION['name'];
-echo "!\n";
-
+echo " / Phone Number: ";
+echo $_SESSION['phoneNum'];
 
 ?>
 
