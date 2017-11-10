@@ -24,6 +24,7 @@ $sandwich = json_encode($sandwich);
     <h3>Make sure your order is correct, and then click "Submit Order"</h3>
     <div id="reviewSandwichDiv">
     </div>
+    <br>
     <form action="/cpsc4910/student/success.html">
         <input type="submit" value="Confirm Order" />
     </form>
