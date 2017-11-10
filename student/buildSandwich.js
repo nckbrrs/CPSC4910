@@ -69,7 +69,7 @@ function onLoad() {
       if (this.checked) {
         currentSandwich['meats'].push(this.value);
       } else {
-        let index = sandwich['meats'].indexOf(this.value);
+        let index = currentSandwich['meats'].indexOf(this.value);
         if (index > -1) {
           currentSandwich['meats'].splice(index, 1);
         }
