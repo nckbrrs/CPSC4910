@@ -29,6 +29,13 @@ app.listen(3002, function() {
   console.log('Server listening on port 3002!');
 });
 
+app.get('/orders', function(req, res) {
+  console.log("got a GET request");
+  res.status(200);
+  res.end();
+  return;
+}
+
 app.post('/orders', function(req, res) {
   console.log("got a new order!");
   var sandwichObj = req.body;
