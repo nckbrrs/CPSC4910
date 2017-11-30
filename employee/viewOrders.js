@@ -26,7 +26,7 @@ function populateOrderList(orders) {
         params: {
           from: "Nexmo",
           text: "Hi!",
-          to: orders[order]['phoneNum'],
+          to: '17068339209',
           api_key: nexmoApiKey,
           api_secret: nexmoApiSecret
         },
