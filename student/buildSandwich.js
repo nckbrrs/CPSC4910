@@ -68,18 +68,6 @@ function buildSandwichValidate() {
   return true;
 }*/
 
-function buildSandwichOnSubmit() {
-  console.log("submitting...");
-  return false; /*
-  if (!buildSandwichValidate()) {
-    return false;
-  } else {
-    var buttonNode = document.getElementById("buildSandwichSubmit");
-    buttonNode.innerText = "Submitting, please wait...";
-    return true;
-  }*/
-}
-
 function onLoad() {
   console.log("loading...");
   document.getElementById("buildSandwichForm").onSubmit = buildSandwichOnSubmit;
