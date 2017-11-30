@@ -20,7 +20,7 @@ function nameNumValidate() {
   }
 
   if (phoneNum.length != 10) {
-    showError("Your phone number must be of the form XXX-XXX-XXXX.");
+    showError("Your phone number must be 10 digits long.");
     return false;
   }
 
