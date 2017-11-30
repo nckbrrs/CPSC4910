@@ -19,6 +19,11 @@ function nameNumValidate() {
     return false;
   }
 
+  if (phoneNum.length != 10) {
+    showError("Your phone number must be of the form XXX-XXX-XXXX.");
+    return false;
+  }
+
   showError("false");
   return true;
 }

@@ -9,7 +9,7 @@ if (!isset($_SESSION['name']) || !isset($_SESSION['phoneNum'])) {
     return;
   } else {
     $_SESSION['name'] = $_POST['name'];
-    $_SESSION['phoneNum'] = $_POST['phoneNum'];
+    $_SESSION['phoneNum'] = '1' . $_POST['phoneNum'];
   }
 }
 
