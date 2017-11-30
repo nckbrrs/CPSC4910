@@ -4,8 +4,8 @@ function populateOrderList(orders) {
 
   for (order in orders) {
     var newOrderDiv = document.createElement("div");
-    newOrderDiv.class = 'order';
-    newOrderHTML = "";
+    newOrderDiv.setAttribute("class", "order");
+    newOrderHTML = "<br>";
     newOrderHTML += JSON.stringify(orders[order]);
     newOrderHTML += "<br>";
     newOrderDiv.innerHTML = newOrderHTML;
