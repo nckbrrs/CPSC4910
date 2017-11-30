@@ -89,12 +89,9 @@ function confirmOrderOnSubmit() {
 function onLoad() {
   populateNameNumDiv();
   populateReviewDiv();
-/*
-  var formNode = document.getElementById("reviewOrderForm");
-  formNode.onSubmit = confirmOrderOnSubmit;*/
 
-  var buttonNode = document.getElementById("reviewOrderSubmit");
-  buttonNode.onclick = confirmOrderOnSubmit;
+  var formNode = document.getElementById("reviewOrderForm");
+  formNode.onsubmit = confirmOrderOnSubmit;
 
   return true;
 }
