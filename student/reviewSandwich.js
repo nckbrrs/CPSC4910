@@ -130,7 +130,7 @@ function confirmOrderOnSubmit() {
     })
     .then(function (response) {
       console.log(response);
-      window.location("/cpsc4910/student/success.php");
+      window.location.replace("/cpsc4910/student/success.php");
       return true;
     })
     .catch(function (error) {
