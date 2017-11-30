@@ -72,7 +72,7 @@ function buildSandwichOnSubmit() {
     return false;
   }
 
-  var buttonNode = document.getElementById("buildSnadwichSubmit");
+  var buttonNode = document.getElementById("buildSandwichSubmit");
   buttonNode.innerText = "Submitting, please wait...";
   return true;
 }
