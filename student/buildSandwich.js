@@ -123,4 +123,3 @@ function onLoad() {
 }
 
 window.addEventListener("load", onLoad, false);
-document.getElementById("buildSandwichForm").addEventListener("submit", function() {return false});
