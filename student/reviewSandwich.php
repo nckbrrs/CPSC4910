@@ -7,6 +7,7 @@ if (!isset($_POST['name']) || !isset($_POST['phoneNum'])) {
   return;
 }
 
+// if no sandwich built, redirect to build sandwich page
 if (!isset($_POST['bread']) || !isset($_POST['meats']) || !isset($_POST['cheeses']) || !isset($_POST['veggies']) || !isset($_POST['sauces'])) {
   header("Location: /cpsc4910/student/buildSandwich.php", true, 302);
   return;
