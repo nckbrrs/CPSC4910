@@ -34,9 +34,10 @@ $sandwich = json_encode($sandwich);
     <div id="reviewSandwichDiv">
     </div>
     <br>
-    <form id="reviewOrderForm" action="/cpsc4910/student/success.html">
+    <button id="reviewOrderSubmit">Confirm Order</button>
+    <!--<form id="reviewOrderForm" action="/cpsc4910/student/success.html">
         <button id="reviewOrderSubmit" type="submit" name="reviewOrderSubmit">Confirm Order</button>
-    </form>
+    </form>-->
     <script type="text/javascript" src="/cpsc4910/student/reviewSandwich.js"></script>
     <script type="text/javascript">var sandwich = <?php echo $sandwich; ?>;</script>
     <script type="text/javascript">var name = '<?php echo $_SESSION['name']; ?>';</script>
