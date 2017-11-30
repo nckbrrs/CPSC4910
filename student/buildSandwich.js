@@ -38,8 +38,6 @@ function updatePreview() {
 }
 
 function onLoad() {
-  console.log("loading...");
-  document.getElementById("buildSandwichForm").onSubmit = false;
 
   currentSandwich = {
     bread: "",

@@ -172,7 +172,7 @@ if (!isset($_SESSION['name']) || !isset($_SESSION['phoneNum'])) {
               </li>
             </ul>
           </div>
-          <button id="buildSandwichSubmit" type="submit" name="buildSandwichSubmit">Review your order</button>
+          <button id="buildSandwichSubmit" onsubmit="false" type="submit" name="buildSandwichSubmit">Review your order</button>
         </form>
       </div>
       <div id="rightHalfDiv">
