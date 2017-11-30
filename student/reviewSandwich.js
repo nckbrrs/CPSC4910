@@ -67,8 +67,8 @@ function populateReviewDiv() {
   reviewSandwichNode.innerHTML = sandwichHTML;
 }
 
-function populateRedisSandwich() {
-  var redisSandwich = {};
+function populateOrder() {
+  var myOrder = {};
 
   var meatsArrayAsString = "";
   if (sandwich['meats'] == null) {
@@ -110,21 +110,22 @@ function populateRedisSandwich() {
   }
   saucesArrayAsString = saucesArrayAsString.replace(/,\s*$/, "");
 
-  redisSandwich['bread'] = sandwich['bread'];
-  redisSandwich['meats'] = meatsArrayAsString;
-  redisSandwich['cheeses'] = cheesesArrayAsString;
-  redisSandwich['veggies'] = veggiesArrayAsString;
-  redisSandwich['sauces'] = saucesArrayAsString;
-  return redisSandwich;
+  myOrder['bread'] = sandwich['bread'];
+  myOrder['meats'] = meatsArrayAsString;
+  myOrder['cheeses'] = cheesesArrayAsString;
+  myOrder['veggies'] = veggiesArrayAsString;
+  myOrder['sauces'] = saucesArrayAsString;
+  myOrder['name']
+  return order;
 }
 
 function confirmOrderOnSubmit() {
 
-  var myRedisSandwich = populateRedisSandwich();
-  console.log("posting with param of ", JSON.stringify(myRedisSandwich));
+  var order = populateOrder();
+  console.log("posting with param of ", JSON.stringify(order));
 
   axios.post("http://54.200.82.249:3000/orders", {
-      sandwich: myRedisSandwich
+      order: order
     })
     .then(function (response) {
       console.log(response);
