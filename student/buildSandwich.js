@@ -56,7 +56,9 @@ function buildSandwichValidate() {
   var numChz = currentSandwich['cheeses'].length;
   var numVeg = currentSandwich['veggies'].length;
 
-  if (bread === "" || numMts === 0 || numChz === 0) {
+  console.log("bread: ", bread, "\nnumMts: ", numMts, "\nnumChz: ", numChz, "\nnumVeg: ", numVeg);
+
+  if (bread == "" || numMts == 0 || numChz == 0) {
     console.log("bad");
     showError("You must choose a bread, and at least one meat and one cheese");
     return false;
