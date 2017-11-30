@@ -3,7 +3,7 @@ function populateNameNumDiv() {
 
   var nameNumHTML = "<br>";
   nameNumHTML += ("<b>Name</b>: " + name + "<br>");
-  nameNumHTML += ("<b>Phone Number</b>: " + phoneNum + "<br>");
+  nameNumHTML += ("<b>Phone Number</b>: " + phoneNum + "<br><br>");
 
   reviewNameNumNode.innerHTML = nameNumHTML;
 }
