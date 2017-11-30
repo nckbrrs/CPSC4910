@@ -1,6 +1,3 @@
-const nexmoApiKey = 'df2676ae';
-const nexmoApiSecret = '74317485e0ae7ec7';
-
 function populateOrderList(orders) {
   console.log(orders);
   var orderListNode = document.getElementById("orderList");
