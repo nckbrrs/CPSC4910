@@ -1,3 +1,9 @@
+const Nexmo = require('nexmo');
+const nexmo = new Nexmo({
+  apiKey: 'df2676ae';
+  apiSecret: '74317485e0ae7ec7';
+})
+
 function populateOrderList(orders) {
   console.log(orders);
   var orderListNode = document.getElementById("orderList");
@@ -14,6 +20,21 @@ function populateOrderList(orders) {
     newOrderHTML += "<br><b>Veggies</b>: " + orders[order]['veggies'];
     newOrderHTML += "<br><b>Sauces</b>: " + orders[order]['sauces'];
     newOrderDiv.innerHTML = newOrderHTML;
+
+    var newSmsButton = document.createElement("button");
+    newSmsButton.onclick = function() {
+      nexmo.message.sendSms(12015946598, orders[order]['phoneNum'], 'hi',
+        (err, responseData) => {
+          if (err) {
+            console.log(err);
+          } else {
+            console.dir(responseData);
+          }
+        }
+      );
+    }
+    newSmsButton.innerHTML = ("Notify " + orders[order]['name']);
+    newOrderDiv.appendChild(newSmsButton);
     orderListNode.appendChild(newOrderDiv);
     orderListNode.appendChild(document.createElement("br"));
   }
