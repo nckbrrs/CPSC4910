@@ -15,6 +15,7 @@ function populateOrderList(orders) {
     newOrderHTML += "<br><b>Sauces</b>: " + orders[order]['sauces'];
     newOrderDiv.innerHTML = newOrderHTML;
     orderListNode.appendChild(newOrderDiv);
+    orderListNode.appendChild(document.createElement("br"));
   }
 }
 
