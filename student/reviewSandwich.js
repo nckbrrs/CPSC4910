@@ -68,13 +68,13 @@ function populateReviewDiv() {
 }
 
 function confirmOrderOnSubmit() {
-  console.log("posting to DB...");
+
+  console.log("posting with param of ", JSON.stringify(sandwich));
 
   axios.post("http://54.200.82.249:3002/orders", {
       params: {
         sandwich: sandwich
       }
-      console.log("posted with param of ", JSON.stringifY(sandwich));
     })
     .then(function (response) {
       console.log(response);
