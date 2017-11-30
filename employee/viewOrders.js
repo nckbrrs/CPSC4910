@@ -20,21 +20,28 @@ function populateOrderList(orders) {
 
     var newSmsButton = document.createElement("button");
     newSmsButton.onclick = function() {
-      axios.post("https://rest.nexmo.com/sms/json", {
+      axios({
+        method: 'post',
+        url: 'https://rest.nexmo.com/sms/json',
+        params: {
           from: "Nexmo",
           text: "Hi!",
           to: orders[order]['phoneNum'],
           api_key: nexmoApiKey,
           api_secret: nexmoApiSecret
-        })
-        .then(function (response) {
-          console.log(response);
-          return true;
-        })
-        .catch(function (error) {
-          console.log(error);
-          return false;
-        });
+        },
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded'
+        }
+      })
+      .then(function (response) {
+        console.log(response);
+        return true;
+      })
+      .catch(function (error) {
+        console.log(error);
+        return false;
+      });
     }
     newSmsButton.innerHTML = ("Notify " + orders[order]['name']);
     newOrderDiv.appendChild(document.createElement("br"));
