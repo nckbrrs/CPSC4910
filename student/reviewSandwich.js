@@ -70,7 +70,7 @@ function populateReviewDiv() {
 function confirmOrderOnSubmit() {
   console.log("posting to DB...");
 
-  axios.post("54.200.82.249:3002/orders", {
+  axios.post("http://54.200.82.249:3002/orders", {
       params: {
         sandwich: sandwich
       }
