@@ -119,7 +119,7 @@ function populateRedisSandwich() {
 
 function confirmOrderOnSubmit() {
 
-  console.log("posting with param of ", JSON.stringify(sandwich));
+  console.log("posting with param of ", JSON.stringify(redisSandwich));
 
   axios.post("http://54.200.82.249:3000/orders", {
       sandwich: redisSandwich
