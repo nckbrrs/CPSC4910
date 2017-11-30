@@ -31,7 +31,6 @@ function populateOrderList(orders) {
               console.log(error);
               return false;
             })
-          }
           console.log(response);
           return true;
         })
