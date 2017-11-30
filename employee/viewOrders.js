@@ -3,7 +3,7 @@ function populateOrderList(orders) {
   var orderListNode = document.getElementById("orderList");
 
   for (order in orders) {
-    var newOrderDiv = document.createElement("div class='order'");
+    var newOrderDiv = document.createElement("div");
     newOrderHTML = "";
     newOrderHTML += JSON.stringify(orders[order]);
     newOrderHTML += "<br>";
