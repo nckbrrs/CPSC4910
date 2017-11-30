@@ -23,6 +23,7 @@ app.listen(3002, function() {
 });
 
 app.post('/orders', function(req, res) {
+  console.log("got a new order!");
   var sandwichObj = req.body;
 
   if (sandwichObj == null) {
