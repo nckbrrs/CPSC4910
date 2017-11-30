@@ -31,7 +31,7 @@ if (!isset($_SESSION['name']) || !isset($_SESSION['phoneNum'])) {
     <br>
     <div id="container">
       <div id="leftHalfDiv">
-        <form id="buildSandwichForm" method="post" action="/cpsc4910/student/reviewSandwich.php">
+        <form id="buildSandwichForm" onsubmit="false" method="post" action="/cpsc4910/student/reviewSandwich.php">
           <div id="chooseBread">
             <h3>Choose your bread:</h3>
             <ul>
@@ -172,7 +172,7 @@ if (!isset($_SESSION['name']) || !isset($_SESSION['phoneNum'])) {
               </li>
             </ul>
           </div>
-          <button id="buildSandwichSubmit" onsubmit="false" type="submit" name="buildSandwichSubmit">Review your order</button>
+          <button id="buildSandwichSubmit" type="submit" name="buildSandwichSubmit">Review your order</button>
         </form>
       </div>
       <div id="rightHalfDiv">
