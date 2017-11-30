@@ -71,7 +71,7 @@ function confirmOrderOnSubmit() {
 
   console.log("posting with param of ", JSON.stringify(sandwich));
 
-  axios.post("http://54.200.82.249:3002/orders", {
+  axios.post("http://54.200.82.249:3000/orders", {
       params: {
         sandwich: sandwich
       }
