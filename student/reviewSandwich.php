@@ -34,7 +34,7 @@ $sandwich = json_encode($sandwich);
     <div id="reviewSandwichDiv">
     </div>
     <br>
-    <a href="/cpsc4910/student/success.html"><button id="reviewOrderSubmit">Confirm Order</button></a>
+    <button id="reviewOrderSubmit">Confirm Order</button>
     <!--
     <form id="reviewOrderForm" action="/cpsc4910/student/success.html">
         <button id="reviewOrderSubmit" type="submit" name="reviewOrderSubmit">Confirm Order</button>
