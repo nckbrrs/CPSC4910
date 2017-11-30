@@ -4,3 +4,9 @@ html {
   text-align: center;
   font-family: sans-serif;
 }
+
+.order {
+  width: 50%;
+  margin: auto;
+  border: 1px solid orange;
+}
