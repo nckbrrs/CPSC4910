@@ -37,6 +37,43 @@ function updatePreview() {
   previewSandwichNode.innerHTML = sandwichAsHTML;
 }
 
+function showError(msg) {
+  var errorNode = document.getElementById("errorMessage");
+  if(msg == "" || msg == "false") {
+    // hide error
+    errorNode.style = "visibility: hidden;";
+    return;
+  } else {
+    errorNode.innerText = msg;
+    errorNode.style = "color: red;";
+  }
+};
+
+function buildSandwichValidate() {
+  var bread = currentSandwich['bread'];
+  var numMts = currentSandwich['meats'].length;
+  var numChz = currentSandwich['cheeses'].length;
+  var numVeg = currentSandwich['veggies'].length;
+
+  if (bread === "" || numMts === 0 || numChz === 0) {
+    showError("You must choose a bread, and at least one meat and one cheese");
+    return false;
+  }
+
+  showError("false");
+  return true;
+}
+
+function buildSandwichOnSubmit() {
+  if (!buildSandwichValidate()) {
+    return false;
+  }
+
+  var buttonNode = document.getElementById("buildSnadwichSubmit");
+  buttonNode.innerText = "Submitting, please wait...";
+  return true;
+}
+
 function onLoad() {
 
   currentSandwich = {
@@ -120,6 +157,9 @@ function onLoad() {
       updatePreview(currentSandwich);
     }
   }
+
+  var formNode = document.getElementById("buildSandwichForm");
+  formNode.onSubmit = buildSandwichOnSubmit;
 };
 
 window.addEventListener("load", onLoad, false);
