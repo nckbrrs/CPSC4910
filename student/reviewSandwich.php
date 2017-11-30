@@ -3,6 +3,7 @@ session_start();
 
 // if name or phoneNum session vars not set, redirect to index.html
 if (!isset($_SESSION['name']) || !isset($_SESSION['phoneNum'])) {
+  console.log("session vars not set");
   header("Location: /cpsc4910/student/index.html", true, 302);
   return;
 }

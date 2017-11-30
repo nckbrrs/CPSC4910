@@ -1,18 +1,13 @@
 <?php
 session_start();
 
-if (!isset($_POST['name']) || !isset($_POST['phoneNum'])) {
-  // if name or phoneNum post vars not set (i.e. not coming from initial page),
-  // check to see if session vars are set
-  if (!isset($_SESSION['name']) || !isset($_SESSION['phoneNum'])) {
-    // if name or phoneNum session vars not set (i.e. never completed initial form),
-    // redirect to index.html
-    header("Location: /cpsc4910/student/index.html", true, 302);
-    return;
-  } else {
-    // if post vars are set, but session vars aren't, set session variables
+if (!isset($_SESSION['name']) || !isset($_SESSION['phoneNum'])) {
+  if (!isset($_POST['name']) || !isset($_POST['phoneNum'])) {
     $_SESSION['name'] = $_POST['name'];
     $_SESSION['phoneNum'] = $_POST['phoneNum'];
+  } else {
+    header("Location: /cpsc4910/student/index.html", true, 302);
+    return;
   }
 }
 
