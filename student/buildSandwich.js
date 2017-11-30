@@ -72,19 +72,20 @@ function buildSandwichValidate() {
 
 function buildSandwichOnSubmit() {
   console.log("submitting...");
+  return false; /*
   if (!buildSandwichValidate()) {
     return false;
   } else {
     var buttonNode = document.getElementById("buildSandwichSubmit");
     buttonNode.innerText = "Submitting, please wait...";
     return true;
-  }
+  }*/
 }
 
 function onLoad() {
   console.log("loading...");
   var formNode = document.getElementById("buildSandwichForm");
-  formNode.onSubmit = false;
+  formNode.onSubmit = buildSandwichOnSubmit;
 
   currentSandwich = {
     bread: "",
