@@ -25,6 +25,7 @@ function populateOrderList(orders) {
           axios.delete(`http://54.200.82.249:3000/order/${orders[order]['id']}`)
             .then(function(response) {
               console.log(response);
+              location.reload(true);
               return true;
             })
             .catch(function(error) {
