@@ -23,9 +23,9 @@ app.listen(3002, function() {
 });
 
 app.get('/', function(req, res) {
-  console.log("got a GET request");
   res.send("hello world");
-});
+})
+
 /*
 app.post('/orders', function(req, res) {
   console.log("got a new order!");
