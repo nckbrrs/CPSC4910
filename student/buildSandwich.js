@@ -167,6 +167,6 @@ function onLoad() {
       updatePreview(currentSandwich);
     }
   }
-
+}
 
 window.addEventListener("load", onLoad, false);
