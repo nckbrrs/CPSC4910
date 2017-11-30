@@ -117,7 +117,7 @@ function populateOrder() {
   myOrder['sauces'] = saucesArrayAsString;
   myOrder['name'] = name;
   myOrder['phoneNum'] = phoneNum;
-  return order;
+  return myOrder;
 }
 
 function confirmOrderOnSubmit() {
