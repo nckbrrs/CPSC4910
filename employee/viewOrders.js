@@ -1,4 +1,5 @@
 function populateOrderList(orders) {
+  console.log(orders);
   var orderListNode = document.getElementById("orderList");
 
   for (order in orders) {
