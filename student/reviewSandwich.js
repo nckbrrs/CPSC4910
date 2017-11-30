@@ -16,29 +16,45 @@ function populateReviewDiv() {
   sandwichHTML += (sandwich['bread'] + "<br>");
 
   sandwichHTML += "<b>Meats</b>: ";
-  for (meat in sandwich['meats']) {
-    sandwichHTML += (sandwich['meats'][meat] + ", ");
+  if (sandwich['meats'].length == 0) {
+    sandwichHTML += "none"
+  } else {
+    for (meat in sandwich['meats']) {
+      sandwichHTML += (sandwich['meats'][meat] + ", ");
+    }
   }
   sandwichHTML = sandwichHTML.replace(/,\s*$/, "");
   sandwichHTML += "<br>";
 
   sandwichHTML += "<b>Cheeses</b>: ";
-  for (cheese in sandwich['cheeses']) {
-    sandwichHTML += (sandwich['cheeses'][cheese] + ", ");
+  if (sandwich['cheeses'].length == 0) {
+    sandwichHTML += "none"
+  } else {
+    for (cheese in sandwich['cheeses']) {
+      sandwichHTML += (sandwich['cheeses'][cheese] + ", ");
+    }
   }
   sandwichHTML = sandwichHTML.replace(/,\s*$/, "");
   sandwichHTML += "<br>";
 
   sandwichHTML += "<b>Veggies</b>: ";
-  for (veggie in sandwich['veggies']) {
-    sandwichHTML += (sandwich['veggies'][veggie] + ", ");
+  if (sandwich['veggies'].length == 0) {
+    sandwichHTML += "none"
+  } else {
+    for (veggie in sandwich['veggies']) {
+      sandwichHTML += (sandwich['veggies'][veggie] + ", ");
+    }
   }
   sandwichHTML = sandwichHTML.replace(/,\s*$/, "");
   sandwichHTML += "<br>";
 
   sandwichHTML += "<b>Sauces</b>: ";
-  for (sauce in sandwich['sauces']) {
-    sandwichHTML += (sandwich['sauces'][sauce] + ", ");
+  if (sandwich['sauces'].length == 0) {
+    sandwichHTML += "none"
+  } else {
+    for (sauce in sandwich['sauces']) {
+      sandwichHTML += (sandwich['sauces'][sauce] + ", ");
+    }
   }
   sandwichHTML = sandwichHTML.replace(/,\s*$/, "");
   sandwichHTML += "<br><br>";
