@@ -48,10 +48,3 @@ app.post('/orders', function(req, res) {
     });
   }
 });
-
-
-
-    client.multi()
-      .hmset
-  }
-}
