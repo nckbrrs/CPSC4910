@@ -36,7 +36,7 @@ function updatePreview() {
 
   previewSandwichNode.innerHTML = sandwichAsHTML;
 }
-
+/*
 function showError(msg) {
   var errorNode = document.getElementById("errorMessage");
   if(msg == "" || msg == "false") {
@@ -64,11 +64,9 @@ function buildSandwichValidate() {
     return false;
   }
 
-  return false;
-  /*
   showError("false");
-  return true;*/
-}
+  return true;
+}*/
 
 function buildSandwichOnSubmit() {
   console.log("submitting...");
