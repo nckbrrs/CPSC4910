@@ -7,44 +7,46 @@ function populateNameNumDiv() {
 
   nameNumHTML += "<br>";
   nameNumHTML += phoneNum;
+
+  reviewNameNumNode.innerHTML = nameNumHTML;
 }
 
 function populateReviewDiv() {
   var reviewSandwichNode = document.getElementById("reviewSandwichDiv");
 
-  var sandwichAsHTML = "<br>";
-  sandwichAsHTML += "<b>Bread</b>: ";
-  sandwichAsHTML += (sandwich['bread'] + "<br>");
+  var sandwichHTML = "<br>";
+  sandwichHTML += "<b>Bread</b>: ";
+  sandwichHTML += (sandwich['bread'] + "<br>");
 
-  sandwichAsHTML += "<b>Meats</b>: ";
+  sandwichHTML += "<b>Meats</b>: ";
   for (meat in sandwich['meats']) {
-    sandwichAsHTML += (sandwich['meats'][meat] + ", ");
+    sandwichHTML += (sandwich['meats'][meat] + ", ");
   }
-  sandwichAsHTML = sandwichAsHTML.replace(/,\s*$/, "");
-  sandwichAsHTML += "<br>";
+  sandwichHTML = sandwichHTML.replace(/,\s*$/, "");
+  sandwichHTML += "<br>";
 
-  sandwichAsHTML += "<b>Cheeses</b>: ";
+  sandwichHTML += "<b>Cheeses</b>: ";
   for (cheese in sandwich['cheeses']) {
-    sandwichAsHTML += (sandwich['cheeses'][cheese] + ", ");
+    sandwichHTML += (sandwich['cheeses'][cheese] + ", ");
   }
-  sandwichAsHTML = sandwichAsHTML.replace(/,\s*$/, "");
-  sandwichAsHTML += "<br>";
+  sandwichHTML = sandwichHTML.replace(/,\s*$/, "");
+  sandwichHTML += "<br>";
 
-  sandwichAsHTML += "<b>Veggies</b>: ";
+  sandwichHTML += "<b>Veggies</b>: ";
   for (veggie in sandwich['veggies']) {
-    sandwichAsHTML += (sandwich['veggies'][veggie] + ", ");
+    sandwichHTML += (sandwich['veggies'][veggie] + ", ");
   }
-  sandwichAsHTML = sandwichAsHTML.replace(/,\s*$/, "");
-  sandwichAsHTML += "<br>";
+  sandwichHTML = sandwichHTML.replace(/,\s*$/, "");
+  sandwichHTML += "<br>";
 
-  sandwichAsHTML += "<b>Sauces</b>: ";
+  sandwichHTML += "<b>Sauces</b>: ";
   for (sauce in sandwich['sauces']) {
-    sandwichAsHTML += (sandwich['sauces'][sauce] + ", ");
+    sandwichHTML += (sandwich['sauces'][sauce] + ", ");
   }
-  sandwichAsHTML = sandwichAsHTML.replace(/,\s*$/, "");
-  sandwichAsHTML += "<br><br>";
+  sandwichHTML = sandwichHTML.replace(/,\s*$/, "");
+  sandwichHTML += "<br><br>";
 
-  reviewSandwichNode.innerHTML = sandwichAsHTML;
+  reviewSandwichNode.innerHTML = sandwichHTML;
 }
 
 function onLoad() {
