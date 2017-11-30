@@ -67,7 +67,7 @@ function buildSandwichValidate() {
   return false;
   /*
   showError("false");
-  return true;
+  return true;*/
 }
 
 function buildSandwichOnSubmit() {
