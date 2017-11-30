@@ -1,5 +1,5 @@
 function populateNameNumDiv() {
-  var reviewNameNumNode = document.getElementById("reviewnameNumDiv");
+  var reviewNameNumNode = document.getElementById("reviewNameNumDiv");
 
   var nameNumHTML = "<br>";
   nameNumHTML += "<b>Name</b>: ";
