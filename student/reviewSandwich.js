@@ -16,9 +16,10 @@ function populateReviewDiv() {
   if (sandwich['bread'] == null) {
     sandwichHTML += "none";
   } else {
-    sandwichHTML += (sandwich['bread'] + "<br>");
+    sandwichHTML += (sandwich['bread']);
   }
-  
+  sandwichHTML += "<br>";
+
   sandwichHTML += "<b>Meats</b>: ";
   if (sandwich['meats'] == null) {
     sandwichHTML += "none";
