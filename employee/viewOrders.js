@@ -1,7 +1,7 @@
 const Nexmo = require('nexmo');
 const nexmo = new Nexmo({
-  apiKey: 'df2676ae';
-  apiSecret: '74317485e0ae7ec7';
+  apiKey: 'df2676ae',
+  apiSecret: '74317485e0ae7ec7'
 })
 
 function populateOrderList(orders) {
