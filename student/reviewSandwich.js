@@ -95,7 +95,7 @@ function onLoad() {
   formNode.onsubmit = confirmOrderOnSubmit;
 */
   var buttonNode = document.getElementById("reviewOrderSubmit");
-  formNode.onclick = confirmOrderOnSubmit;
+  buttonNode.onclick = confirmOrderOnSubmit;
 
   return true;
 }
