@@ -1,3 +1,5 @@
+var redisSandwich = {};
+
 function populateNameNumDiv() {
   var reviewNameNumNode = document.getElementById("reviewNameNumDiv");
 
@@ -67,12 +69,60 @@ function populateReviewDiv() {
   reviewSandwichNode.innerHTML = sandwichHTML;
 }
 
+function populateRedisSandwich() {
+  var meatsArrayAsString = "";
+  if (sandwich['meats'] == null) {
+    meatsArrayAsString += "none";
+  } else {
+    for (meat in sandwich['meats']) {
+      meatsArrayAsString += (sandwich['meats'][meat] + ", ");
+    }
+  }
+  meatsArrayAsString = meatsArrayAsString.replace(/,\s*$/, "");
+
+  var cheesesArrayAsString = "";
+  if (sandwich['cheeses'] == null) {
+    cheesesArrayAsString += "none"
+  } else {
+    for (cheese in sandwich['cheeses']) {
+      cheesesArrayAsString += (sandwich['cheeses'][cheese] + ", ");
+    }
+  }
+  cheesesArrayAsString = cheesesArrayAsString.replace(/,\s*$/, "");
+
+  var veggiesArrayAsString = "";
+  if (sandwich['veggies'] == null) {
+    veggiesArrayAsString += "none"
+  } else {
+    for (veggie in sandwich['veggies']) {
+      veggiesArrayAsString += (sandwich['veggies'][veggie] + ", ");
+    }
+  }
+  veggiesArrayAsString = veggiesArrayAsString.replace(/,\s*$/, "");
+
+  var saucesArrayAsString = "";
+  if (sandwich['sauces'] == null) {
+    saucesArrayAsString += "none"
+  } else {
+    for (sauce in sandwich['sauces']) {
+      saucesArrayAsString += (sandwich['sauces'][sauce] + ", ");
+    }
+  }
+  saucesArrayAsString = saucesArrayAsString.replace(/,\s*$/, "");
+
+  redisSandwich['bread'] = sandwich['bread'];
+  redisSandwich['meats'] = meatsArrayAsString;
+  redisSandwich['cheeses'] = cheesesArrayAsString;
+  redisSandwich['veggies'] = veggiesArrayAsString;
+  redisSandwich['sauces'] = saucesArrayAsString;
+}
+
 function confirmOrderOnSubmit() {
 
   console.log("posting with param of ", JSON.stringify(sandwich));
 
   axios.post("http://54.200.82.249:3000/orders", {
-      sandwich: sandwich
+      sandwich: redisSandwich
     })
     .then(function (response) {
       console.log(response);
