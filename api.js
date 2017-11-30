@@ -1,22 +1,22 @@
 var express = require('express');
-var redis = require('redis');
+/*var redis = require('redis');
 var bluebird = require('bluebird');
-var bodyParser = require('body-parser');
+var bodyParser = require('body-parser');*/
 
 /* Bluebird setup */
-bluebird.promisifyAll(redis.RedisClient.prototype);
-bluebird.promisifyAll(redis.Multi.prototype);
+/*bluebird.promisifyAll(redis.RedisClient.prototype);
+bluebird.promisifyAll(redis.Multi.prototype);*/
 
 /* Express setup */
-var app = express();
-app.use(bodyParser.json());
-app.use(bodyParser.urlencoded({extended:true}));
+var app = express()
+/*app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({extended:true}));*/
 
 /* Redis setup */
-var client = redis.createClient();
+/*var client = redis.createClient();
 client.on('error', function(err) {
   console.log('Error in redis client.on ' + err);
-});
+});*/
 
 app.listen(3002, function() {
   console.log('Server listening on port 3002!');
