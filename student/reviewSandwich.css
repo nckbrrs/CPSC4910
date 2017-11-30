@@ -8,3 +8,7 @@ html {
 #reviewSandwichDiv {
   border: 1px solid orange;
 }
+
+#reviewNameNumDiv {
+  border: 1px solid purple;
+}

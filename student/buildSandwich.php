@@ -4,11 +4,6 @@ session_start();
 $_SESSION['name'] = $_POST['name'];
 $_SESSION['phoneNum'] = $_POST['phoneNum'];
 
-echo "Name: ";
-echo $_SESSION['name'];
-echo "\nPhone Number: ";
-echo $_SESSION['phoneNum'];
-
 ?>
 
 <!DOCTYPE html>

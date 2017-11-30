@@ -1,3 +1,14 @@
+function populateNameNumDiv() {
+  var reviewNameNumNode = document.getElementById("reviewnameNumDiv");
+
+  var nameNumHTML = "<br>";
+  nameNumHTML += "<b>Name</b>: ";
+  nameNumHTML += name;
+
+  nameNumHTML += "<br>";
+  nameNumHTML += phoneNum;
+}
+
 function populateReviewDiv() {
   var reviewSandwichNode = document.getElementById("reviewSandwichDiv");
 
@@ -37,6 +48,7 @@ function populateReviewDiv() {
 }
 
 function onLoad() {
+  populateNameNumDiv();
   populateReviewDiv();
 }
 
