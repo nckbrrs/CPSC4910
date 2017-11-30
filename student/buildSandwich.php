@@ -1,6 +1,13 @@
 <?php
 session_start();
 
+// if name or phoneNum not set, redirect to index.html
+if (!isset($_POST['name']) || !isset($_POST['phoneNum'])) {
+  header("Location: /cpsc4910/student/index.html", true, 302);
+  return;
+}
+
+// set session variables
 $_SESSION['name'] = $_POST['name'];
 $_SESSION['phoneNum'] = $_POST['phoneNum'];
 

@@ -46,9 +46,16 @@ function populateReviewDiv() {
   reviewSandwichNode.innerHTML = sandwichHTML;
 }
 
+function confirmOrderOnSubmit() {
+  // REDIS STUFF HERE
+}
+
 function onLoad() {
   populateNameNumDiv();
   populateReviewDiv();
+
+  var formNode = document.getElementById("reviewOrderForm");
+  formNode.onSubmit = confirmOrderOnSubmit;
 }
 
 window.addEventListener("load", onLoad, false);
