@@ -21,7 +21,7 @@ function populateOrderList(orders) {
     var newSmsButton = document.createElement("button");
     newSmsButton.onclick = function() {
       axios.get(`http://54.200.82.249:3000/notifyStudent/${orders[order]['phoneNum']}`)
-        .then(function (response) {/*
+        .then(function (response) {
           axios.delete(`http://54.200.82.249:3000/order/${orders[order]['id']}`)
             .then(function(response) {
               console.log(response);
@@ -31,7 +31,7 @@ function populateOrderList(orders) {
               console.log(error);
               return false;
             })
-          }*/
+          }
           console.log(response);
           return true;
         })
