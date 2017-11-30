@@ -172,7 +172,6 @@ if (!isset($_SESSION['name']) || !isset($_SESSION['phoneNum'])) {
               </li>
             </ul>
           </div>
-          <input type="hidden" name="buildSandwichFlag" value="1">
           <button id="buildSandwichSubmit" type="submit" name="buildSandwichSubmit">Review your order</button>
         </form>
       </div>
