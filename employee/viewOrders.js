@@ -20,9 +20,18 @@ function populateOrderList(orders) {
 
     var newSmsButton = document.createElement("button");
     newSmsButton.onclick = function() {
-      axios.post("http://54.200.82.249:3000/notifyStudent")
+      axios.get(`http://54.200.82.249:3000/notifyStudent/${orders[order]['phoneNum']}`)
         .then(function (response) {
-          console.log(response);
+          axios.delete(`http://54.200.82.249:3000/order/${orders[order]['id']}`)
+            .then(function(response) {
+              console.log(response);
+              return true;
+            })
+            .catch(function(error) {
+              console.log(error);
+              return false;
+            })
+          }
           return true;
         })
         .catch(function (error) {
