@@ -11,13 +11,6 @@ bluebird.promisifyAll(redis.Multi.prototype);
 var app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended:true}));
-app.use(function(req, res, next) {
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Credentials", "true");
-  res.setHeader("Access-Control-Allow-Methods", "GET, DELETE, POST, PUT");
-  res.setHeader("Access-Control-Allow-Headers", "Origin,Accept, X-Requested-With, Content-Type, Access-Control-Request-Method, Access-Control-Request-Headers, Authorization");
-  next();
-});
 
 /* Redis setup */
 var client = redis.createClient();
@@ -29,13 +22,12 @@ app.listen(3002, function() {
   console.log('Server listening on port 3002!');
 });
 
-app.get('/orders', function(req, res) {
+app.get('/', function(req, res) {
   console.log("got a GET request");
-  res.status(200);
-  res.end();
+  res.send("hello world");
   return;
-}
-
+});
+/*
 app.post('/orders', function(req, res) {
   console.log("got a new order!");
   var sandwichObj = req.body;
@@ -63,3 +55,4 @@ app.post('/orders', function(req, res) {
     });
   }
 });
+*/
