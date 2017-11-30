@@ -72,7 +72,7 @@ function confirmOrderOnSubmit() {
 
   axios.post("54.200.82.249:3002/orders", {
       params: {
-        sandwich: sandwich;
+        sandwich: sandwich
       }
     })
     .then(function (response) {
