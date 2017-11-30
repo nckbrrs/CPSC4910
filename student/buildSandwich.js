@@ -36,7 +36,7 @@ function updatePreview() {
 
   previewSandwichNode.innerHTML = sandwichAsHTML;
 }
-
+/*
 function showError(msg) {
   var errorNode = document.getElementById("errorMessage");
   if(msg == "" || msg == "false") {
@@ -76,10 +76,10 @@ function buildSandwichOnSubmit() {
   buttonNode.innerText = "Submitting, please wait...";
   return true;
 }
-
-function onLoad() {
+*/
+function onLoad() {/*
   var formNode = document.getElementById("buildSandwichForm");
-  formNode.onSubmit = buildSandwichOnSubmit;
+  formNode.onSubmit = buildSandwichOnSubmit;*/
 
   currentSandwich = {
     bread: "",
