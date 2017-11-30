@@ -2,9 +2,9 @@
 session_start();
 
 if (!isset($_SESSION['name']) || !isset($_SESSION['phoneNum'])) {
-  console.log("session vars not set");
+  echo "session vars not set";
   if (!isset($_POST['name']) || !isset($_POST['phoneNum'])) {
-    console.log("post vars not set");
+    echo "post vars not set";
     header("Location: /cpsc4910/student/index.html", true, 302);
     return;
   } else {
