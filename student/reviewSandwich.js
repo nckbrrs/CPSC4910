@@ -77,9 +77,11 @@ function confirmOrderOnSubmit() {
     })
     .then(function (response) {
       console.log(response);
+      return true;
     })
     .catch(function (error) {
       console.log(error);
+      return false;
     });
 }
 
