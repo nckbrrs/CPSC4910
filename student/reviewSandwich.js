@@ -16,7 +16,7 @@ function populateReviewDiv() {
   sandwichHTML += (sandwich['bread'] + "<br>");
 
   sandwichHTML += "<b>Meats</b>: ";
-  if (sandwich['meats'].length == 0) {
+  if (sandwich['meats'] == null) {
     sandwichHTML += "none"
   } else {
     for (meat in sandwich['meats']) {
@@ -27,7 +27,7 @@ function populateReviewDiv() {
   sandwichHTML += "<br>";
 
   sandwichHTML += "<b>Cheeses</b>: ";
-  if (sandwich['cheeses'].length == 0) {
+  if (sandwich['cheeses'] == null) {
     sandwichHTML += "none"
   } else {
     for (cheese in sandwich['cheeses']) {
@@ -38,7 +38,7 @@ function populateReviewDiv() {
   sandwichHTML += "<br>";
 
   sandwichHTML += "<b>Veggies</b>: ";
-  if (sandwich['veggies'].length == 0) {
+  if (sandwich['veggies'] == null) {
     sandwichHTML += "none"
   } else {
     for (veggie in sandwich['veggies']) {
@@ -49,7 +49,7 @@ function populateReviewDiv() {
   sandwichHTML += "<br>";
 
   sandwichHTML += "<b>Sauces</b>: ";
-  if (sandwich['sauces'].length == 0) {
+  if (sandwich['sauces'] == null) {
     sandwichHTML += "none"
   } else {
     for (sauce in sandwich['sauces']) {
