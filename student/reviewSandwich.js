@@ -13,11 +13,15 @@ function populateReviewDiv() {
 
   var sandwichHTML = "<br>";
   sandwichHTML += "<b>Bread</b>: ";
-  sandwichHTML += (sandwich['bread'] + "<br>");
-
+  if (sandwich['bread'] == null) {
+    sandwichHTML += "none";
+  } else {
+    sandwichHTML += (sandwich['bread'] + "<br>");
+  }
+  
   sandwichHTML += "<b>Meats</b>: ";
   if (sandwich['meats'] == null) {
-    sandwichHTML += "none"
+    sandwichHTML += "none";
   } else {
     for (meat in sandwich['meats']) {
       sandwichHTML += (sandwich['meats'][meat] + ", ");
