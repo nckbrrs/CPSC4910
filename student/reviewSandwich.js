@@ -115,7 +115,8 @@ function populateOrder() {
   myOrder['cheeses'] = cheesesArrayAsString;
   myOrder['veggies'] = veggiesArrayAsString;
   myOrder['sauces'] = saucesArrayAsString;
-  myOrder['name']
+  myOrder['name'] = name;
+  myOrder['phoneNum'] = phoneNum;
   return order;
 }
 
