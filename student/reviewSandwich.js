@@ -88,9 +88,9 @@ function confirmOrderOnSubmit() {
 function onLoad() {
   populateNameNumDiv();
   populateReviewDiv();
-
+/*
   var formNode = document.getElementById("reviewOrderForm");
-  formNode.onSubmit = confirmOrderOnSubmit;
+  formNode.onSubmit = confirmOrderOnSubmit;*/
 
   var buttonNode = document.getElementById("reviewOrderSubmit");
   buttonNode.onClick = confirmOrderOnSubmit;
