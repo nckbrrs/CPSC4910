@@ -1,6 +1,17 @@
 <?php
 session_start();
 
+// if name or phoneNum not set, redirect to index.html
+if (!isset($_POST['name']) || !isset($_POST['phoneNum'])) {
+  header("Location: /cpsc4910/student/index.html", true, 302);
+  return;
+}
+
+if (!isset($_POST['bread']) || !isset($_POST['meats']) || !isset($_POST['cheeses']) || !isset($_POST['veggies']) || !isset($_POST['sauces'])) {
+  header("Location: /cpsc4910/student/buildSandwich.php", true, 302);
+  return;
+}
+
 $sandwich->bread = $_POST['bread'];
 $sandwich->meats = $_POST['meats'];
 $sandwich->cheeses = $_POST['cheeses'];
