@@ -1,8 +1,5 @@
-const Nexmo = require('nexmo');
-const nexmo = new Nexmo({
-  apiKey: 'df2676ae',
-  apiSecret: '74317485e0ae7ec7'
-})
+const nexmoApiKey = 'df2676ae';
+const nexmoApiSecret = '74317485e0ae7ec7';
 
 function populateOrderList(orders) {
   console.log(orders);
@@ -23,15 +20,21 @@ function populateOrderList(orders) {
 
     var newSmsButton = document.createElement("button");
     newSmsButton.onclick = function() {
-      nexmo.message.sendSms(12015946598, orders[order]['phoneNum'], 'hi',
-        (err, responseData) => {
-          if (err) {
-            console.log(err);
-          } else {
-            console.dir(responseData);
-          }
-        }
-      );
+      axios.post("https://rest.nexmo.com/sms/json", {
+          from: "Nexmo",
+          text: "Hi!",
+          to: orders[order]['phoneNum'],
+          api_key: nexmoApiKey,
+          api_secret: nexmoApiSecret
+        })
+        .then(function (response) {
+          console.log(response);
+          return true;
+        })
+        .catch(function (error) {
+          console.log(error);
+          return false;
+        });
     }
     newSmsButton.innerHTML = ("Notify " + orders[order]['name']);
     newOrderDiv.appendChild(newSmsButton);
