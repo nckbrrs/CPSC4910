@@ -85,6 +85,9 @@ function onLoad() {
   var formNode = document.getElementById("buildSandwichForm");
   formNode.onSubmit = buildSandwichOnSubmit;
 
+  var buttonNode = document.getElementById("buildSandwichSubmit");
+  buttonNode.onClick = buildSandwichOnSubmit;
+
   currentSandwich = {
     bread: "",
     meats: [],
