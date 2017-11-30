@@ -50,12 +50,14 @@ function showError(msg) {
 };
 
 function buildSandwichValidate() {
+  console.log("validating...");
   var bread = currentSandwich['bread'];
   var numMts = currentSandwich['meats'].length;
   var numChz = currentSandwich['cheeses'].length;
   var numVeg = currentSandwich['veggies'].length;
 
   if (bread === "" || numMts === 0 || numChz === 0) {
+    console.log("bad");
     showError("You must choose a bread, and at least one meat and one cheese");
     return false;
   }
@@ -65,6 +67,7 @@ function buildSandwichValidate() {
 }
 
 function buildSandwichOnSubmit() {
+  console.log("submitting...");
   if (!buildSandwichValidate()) {
     return false;
   }
@@ -75,6 +78,8 @@ function buildSandwichOnSubmit() {
 }
 
 function onLoad() {
+  var formNode = document.getElementById("buildSandwichForm");
+  formNode.onSubmit = buildSandwichOnSubmit;
 
   currentSandwich = {
     bread: "",
@@ -157,9 +162,6 @@ function onLoad() {
       updatePreview(currentSandwich);
     }
   }
-
-  var formNode = document.getElementById("buildSandwichForm");
-  formNode.onSubmit = buildSandwichOnSubmit;
 };
 
 window.addEventListener("load", onLoad, false);
