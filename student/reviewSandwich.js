@@ -1,5 +1,3 @@
-var redisSandwich = {};
-
 function populateNameNumDiv() {
   var reviewNameNumNode = document.getElementById("reviewNameNumDiv");
 
@@ -70,6 +68,8 @@ function populateReviewDiv() {
 }
 
 function populateRedisSandwich() {
+  var redisSandwich = {};
+
   var meatsArrayAsString = "";
   if (sandwich['meats'] == null) {
     meatsArrayAsString += "none";
@@ -115,14 +115,16 @@ function populateRedisSandwich() {
   redisSandwich['cheeses'] = cheesesArrayAsString;
   redisSandwich['veggies'] = veggiesArrayAsString;
   redisSandwich['sauces'] = saucesArrayAsString;
+  return redisSandwich;
 }
 
 function confirmOrderOnSubmit() {
 
-  console.log("posting with param of ", JSON.stringify(redisSandwich));
+  var myRedisSandwich = populateRedisSandwich();
+  console.log("posting with param of ", JSON.stringify(myRedisSandwich));
 
   axios.post("http://54.200.82.249:3000/orders", {
-      sandwich: redisSandwich
+      sandwich: myRedisSandwich
     })
     .then(function (response) {
       console.log(response);
