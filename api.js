@@ -20,9 +20,7 @@ client.on('error', function(err) {
 
 app.listen(3002, () => console.log('Listening on 3002!'))
 
-app.get('/', (req, res) => {
-  res.send('Hello World!')
-})
+app.get('/', (req, res) => res.send('Hello World!'))
 
 /*
 app.post('/orders', function(req, res) {
