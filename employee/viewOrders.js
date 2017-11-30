@@ -7,8 +7,8 @@ function populateOrderList(orders) {
     newOrderDiv.setAttribute("class", "order");
     newOrderHTML = "";
     newOrderHTML += "<b>Name</b>: " + orders[order]['name'];
-    newOrderHTML ++ "<b>Phone Number</b>: " + orders[order]['phoneNum'];
-    
+    newOrderHTML += "<b>Phone Number</b>: " + orders[order]['phoneNum'];
+
     newOrderHTML += "<br>";
     newOrderDiv.innerHTML = newOrderHTML;
     orderListNode.appendChild(newOrderDiv);
