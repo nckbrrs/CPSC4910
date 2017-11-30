@@ -74,11 +74,11 @@ function buildSandwichOnSubmit() {
   console.log("submitting...");
   if (!buildSandwichValidate()) {
     return false;
+  } else {
+    var buttonNode = document.getElementById("buildSandwichSubmit");
+    buttonNode.innerText = "Submitting, please wait...";
+    return true;
   }
-
-  var buttonNode = document.getElementById("buildSandwichSubmit");
-  buttonNode.innerText = "Submitting, please wait...";
-  return true;
 }
 
 function onLoad() {
