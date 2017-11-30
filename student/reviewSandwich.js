@@ -68,7 +68,19 @@ function populateReviewDiv() {
 }
 
 function confirmOrderOnSubmit() {
-  // REDIS STUFF HERE
+  console.log("posting to DB...");
+
+  axios.post("54.200.82.249:3002/orders", {
+      params: {
+        sandwich: sandwich;
+      }
+    })
+    .then(function (response) {
+      console.log(response);
+    })
+    .catch(function (error) {
+      console.log(error);
+    });
 }
 
 function onLoad() {
