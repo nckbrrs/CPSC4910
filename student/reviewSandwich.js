@@ -2,11 +2,9 @@ function populateNameNumDiv() {
   var reviewNameNumNode = document.getElementById("reviewNameNumDiv");
 
   var nameNumHTML = "<br>";
-  nameNumHTML += "<b>Name</b>: ";
-  nameNumHTML += name;
-
+  nameNumHTML += ("<b>Name</b>: " + name);
   nameNumHTML += "<br>";
-  nameNumHTML += phoneNum;
+  nameNumHTML += ("<b>Phone Number</b>: " + phoneNum);
 
   reviewNameNumNode.innerHTML = nameNumHTML;
 }
