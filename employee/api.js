@@ -36,6 +36,7 @@ app.post('/orders', (req, res) => {
                 res.status(400).send('Bad request!');
                 return;
         } else {
+                var orderListNode = document.getElementById("orderList");
                 var newOrderId = null;
                 client.smembersAsync('orders').then(function(orders) {
                         if (orders.length == 0) {
@@ -49,6 +50,7 @@ app.post('/orders', (req, res) => {
                                 .hmset(`order:${newOrderId}`, sandwichObj)
                                 .sadd('orders', `${newOrderId}`)
                                 .execAsync().then(function(retval) {
+                                        orderListNode.innerHTML = json(sandwichObj);
                                         res.status(200).json(sandwichObj);
                                         return;
                                 });
