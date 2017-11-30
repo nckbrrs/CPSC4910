@@ -74,6 +74,7 @@ function confirmOrderOnSubmit() {
       params: {
         sandwich: sandwich
       }
+      console.log("posted with param of ", JSON.stringifY(sandwich));
     })
     .then(function (response) {
       console.log(response);
