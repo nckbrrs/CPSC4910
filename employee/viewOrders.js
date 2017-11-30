@@ -5,8 +5,10 @@ function populateOrderList(orders) {
   for (order in orders) {
     var newOrderDiv = document.createElement("div");
     newOrderDiv.setAttribute("class", "order");
-    newOrderHTML = "<br>";
-    newOrderHTML += JSON.stringify(orders[order]);
+    newOrderHTML = "";
+    newOrderHTML += "<b>Name</b>: " + orders[order]['name'];
+    newOrderHTML ++ "<b>Phone Number</b>: " + orders[order]['phoneNum'];
+    
     newOrderHTML += "<br>";
     newOrderDiv.innerHTML = newOrderHTML;
     orderListNode.appendChild(newOrderDiv);
