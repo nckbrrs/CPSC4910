@@ -37,6 +37,7 @@ function populateOrderList(orders) {
         });
     }
     newSmsButton.innerHTML = ("Notify " + orders[order]['name']);
+    newOrderDiv.appendChild(document.createElement("br"));
     newOrderDiv.appendChild(newSmsButton);
     orderListNode.appendChild(newOrderDiv);
     orderListNode.appendChild(document.createElement("br"));
