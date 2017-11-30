@@ -1,14 +1,15 @@
 <?php
 session_start();
 
-// if name or phoneNum not set, redirect to index.html
-if (!isset($_POST['name']) || !isset($_POST['phoneNum'])) {
+// if name or phoneNum session vars not set, redirect to index.html
+if (!isset($_SESSION['name']) || !isset($_SESSION['phoneNum'])) {
   header("Location: /cpsc4910/student/index.html", true, 302);
   return;
 }
 
 // if no sandwich built, redirect to build sandwich page
 if (!isset($_POST['bread']) || !isset($_POST['meats']) || !isset($_POST['cheeses']) || !isset($_POST['veggies']) || !isset($_POST['sauces'])) {
+  console.log("not all sandwich vars posted");
   header("Location: /cpsc4910/student/buildSandwich.php", true, 302);
   return;
 }
