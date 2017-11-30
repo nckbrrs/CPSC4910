@@ -7,6 +7,7 @@ function populateOrderList(orders) {
     newOrderHTML = "";
     newOrderHTML += JSON.stringify(orders[order]);
     newOrderHTML += "<br>";
+    console.log(newOrderHTML);
     orderListNode.appendChild(newOrderDiv);
   }
 }
