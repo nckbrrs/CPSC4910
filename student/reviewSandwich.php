@@ -32,7 +32,7 @@ $sandwich = json_encode($sandwich);
     </form>
     <script type="text/javascript" src="/cpsc4910/student/reviewSandwich.js"></script>
     <script type="text/javascript">var sandwich = <?php echo $sandwich; ?>;</script>
-    <script type="text/javascript">var name = <?php echo $_SESSION['name']; ?>;</script>
-    <script type="text/javascript">var phoneNum = <?php echo $_SESSION['phoneNum']; ?>;</script>
+    <script type="text/javascript">var name = '<?php echo $_SESSION['name']; ?>';</script>
+    <script type="text/javascript">var phoneNum = '<?php echo $_SESSION['phoneNum']; ?>';</script>
   </body>
 </html>
