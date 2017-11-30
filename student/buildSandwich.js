@@ -78,6 +78,7 @@ function buildSandwichOnSubmit() {
 }
 
 function onLoad() {
+  console.log("loading...");
   var formNode = document.getElementById("buildSandwichForm");
   formNode.onSubmit = buildSandwichOnSubmit;
 
