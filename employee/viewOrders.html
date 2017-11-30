@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sandwich Builder – View Current Orders</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0"/>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="/cpsc4910/employee/viewOrders.css" />
+  </head>
+
+  <body>
+    <h1>Current Orders</h1>
+    <div id="errorMessage" class="errorMessage" style="visibility: hidden;"></div>
+    <br>
+    <p>Here are the orders currently waiting to be prepared:</p>
+    <div id="orderList">
+    </div>
+    <script type="text/javascript">var errorMessage = "<?php echo $errorMessage; ?>";</script>
+    <script type="text/javascript" src="/cpsc4910/student/viewOrders.js"></script>
+  </body>
+</html>
