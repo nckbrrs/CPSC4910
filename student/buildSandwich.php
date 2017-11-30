@@ -3,11 +3,11 @@ session_start();
 
 if (!isset($_SESSION['name']) || !isset($_SESSION['phoneNum'])) {
   if (!isset($_POST['name']) || !isset($_POST['phoneNum'])) {
-    $_SESSION['name'] = $_POST['name'];
-    $_SESSION['phoneNum'] = $_POST['phoneNum'];
-  } else {
     header("Location: /cpsc4910/student/index.html", true, 302);
     return;
+  } else {
+    $_SESSION['name'] = $_POST['name'];
+    $_SESSION['phoneNum'] = $_POST['phoneNum'];
   }
 }
 
