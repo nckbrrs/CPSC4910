@@ -36,41 +36,10 @@ function updatePreview() {
 
   previewSandwichNode.innerHTML = sandwichAsHTML;
 }
-/*
-function showError(msg) {
-  var errorNode = document.getElementById("errorMessage");
-  if(msg == "" || msg == "false") {
-    // hide error
-    errorNode.style = "visibility: hidden;";
-    return;
-  } else {
-    errorNode.innerText = msg;
-    errorNode.style = "color: red;";
-  }
-};
-
-function buildSandwichValidate() {
-  console.log("validating...");
-  var bread = currentSandwich['bread'];
-  var numMts = currentSandwich['meats'].length;
-  var numChz = currentSandwich['cheeses'].length;
-  var numVeg = currentSandwich['veggies'].length;
-
-  console.log("bread: ", bread, "\nnumMts: ", numMts, "\nnumChz: ", numChz, "\nnumVeg: ", numVeg);
-
-  if (bread == "" || numMts == 0 || numChz == 0) {
-    console.log("bad");
-    showError("You must choose a bread, and at least one meat and one cheese");
-    return false;
-  }
-
-  showError("false");
-  return true;
-}*/
 
 function onLoad() {
   console.log("loading...");
-  document.getElementById("buildSandwichForm").onSubmit = buildSandwichOnSubmit;
+  document.getElementById("buildSandwichForm").onSubmit = false;
 
   currentSandwich = {
     bread: "",
