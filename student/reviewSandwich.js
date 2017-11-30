@@ -94,6 +94,8 @@ function onLoad() {
 
   var buttonNode = document.getElementById("reviewOrderSubmit");
   buttonNode.onClick = confirmOrderOnSubmit;
+
+  return true;
 }
 
 window.addEventListener("load", onLoad, false);
