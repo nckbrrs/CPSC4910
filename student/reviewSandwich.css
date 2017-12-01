@@ -1,13 +1,10 @@
-html {
+body {
+  background-color: #F66733;
+  color: white;
   margin: auto;
   text-align: center;
   font-family: sans-serif;
   box-sizing: border-box;
-}
-
-body {
-  background-color: #F66733;
-  color: white;
 }
 
 #reviewSandwichDiv {
