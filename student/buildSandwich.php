@@ -3,7 +3,7 @@ session_start();
 
 if (!isset($_SESSION['name']) || !isset($_SESSION['phoneNum'])) {
   if (!isset($_POST['name']) || !isset($_POST['phoneNum'])) {
-    header("Location: /cpsc4910/student/index.html", true, 302);
+    header("Location: /cpsc4910/student/nameNum.php", true, 302);
     return;
   } else {
     $_SESSION['name'] = $_POST['name'];
@@ -34,23 +34,23 @@ if (!isset($_SESSION['name']) || !isset($_SESSION['phoneNum'])) {
             <h3>Choose your bread:</h3>
             <ul>
               <li><input type="radio" name="bread" value="white" id="whiteBread"/>
-                <label for="whiteBread"><img src="/cpsc4910/student/img/breads/white.png" /><br>White</label>
+                <label for="whiteBread"><img src="/cpsc4910/img/breads/white.png" /><br>White</label>
               </li>
               <li><input type="radio" name="bread" value="wheat" id="wheatBread"/>
-                <label for="wheatBread"><img src="/cpsc4910/student/img/breads/wheat.png" /><br>Wheat</label>
+                <label for="wheatBread"><img src="/cpsc4910/img/breads/wheat.png" /><br>Wheat</label>
               </li>
               <li><input type="radio" name="bread" value="sourdough" id="sourdoughBread"/>
-                <label for="sourdoughBread"><img src="/cpsc4910/student/img/breads/sourdough.png" /><br>Sourdough</label>
+                <label for="sourdoughBread"><img src="/cpsc4910/img/breads/sourdough.png" /><br>Sourdough</label>
               </li>
               <br>
               <li><input type="radio" name="bread" value="flour tortilla" id="flourTortilla"/>
-                <label for="flourTortilla"><img src="/cpsc4910/student/img/breads/flourTortilla.png" /><br>Flour<br>Tortilla</label>
+                <label for="flourTortilla"><img src="/cpsc4910/img/breads/flourTortilla.png" /><br>Flour<br>Tortilla</label>
               </li>
               <li><input type="radio" name="bread" value="herb tortilla" id="herbTortilla"/>
-                <label for="herbTortilla"><img src="/cpsc4910/student/img/breads/herbTortilla.png" /><br>Herb<br>Tortilla</label>
+                <label for="herbTortilla"><img src="/cpsc4910/img/breads/herbTortilla.png" /><br>Herb<br>Tortilla</label>
               </li>
               <li><input type="radio" name="bread" value="white sub" id="whiteSub"/>
-                <label for="whiteSub"><img src="/cpsc4910/student/img/breads/whiteSub.png" /><br>White<br>Sub</label>
+                <label for="whiteSub"><img src="/cpsc4910/img/breads/whiteSub.png" /><br>White<br>Sub</label>
               </li>
             </ul>
           </div>
@@ -58,23 +58,23 @@ if (!isset($_SESSION['name']) || !isset($_SESSION['phoneNum'])) {
             <h3>Choose your meats:</h3>
             <ul>
               <li><input type="checkbox" name="meats[]" value="turkey" id="turkey" />
-                <label for="turkey"><img src="/cpsc4910/student/img/meats/turkey.png"/><br>Turkey</label>
+                <label for="turkey"><img src="/cpsc4910/img/meats/turkey.png"/><br>Turkey</label>
               </li>
               <li><input type="checkbox" name="meats[]" value="ham" id="ham" />
-                <label for="ham"><img src="/cpsc4910/student/img/meats/ham.png"/><br>Ham</label>
+                <label for="ham"><img src="/cpsc4910/img/meats/ham.png"/><br>Ham</label>
               </li>
               <li><input type="checkbox" name="meats[]" value="salami" id="salami" />
-                <label for="salami"><img src="/cpsc4910/student/img/meats/salami.png"/><br>Salami</label>
+                <label for="salami"><img src="/cpsc4910/img/meats/salami.png"/><br>Salami</label>
               </li>
               <br>
               <li><input type="checkbox" name="meats[]" value="tuna salad" id="tunaSalad" />
-                <label for="tunaSalad"><img src="/cpsc4910/student/img/meats/tunaSalad.png"/><br>Tuna<br>Salad</label>
+                <label for="tunaSalad"><img src="/cpsc4910/img/meats/tunaSalad.png"/><br>Tuna<br>Salad</label>
               </li>
               <li><input type="checkbox" name="meats[]" value="chicken salad" id="chickenSalad" />
-                <label for="chickenSalad"><img src="/cpsc4910/student/img/meats/chickenSalad.png"/><br>Chicken<br>Salad</label>
+                <label for="chickenSalad"><img src="/cpsc4910/img/meats/chickenSalad.png"/><br>Chicken<br>Salad</label>
               </li>
               <li><input type="checkbox" name="meats[]" value="bacon" id="bacon" />
-                <label for="bacon"><img src="/cpsc4910/student/img/meats/bacon.png"/><br>Bacon</label>
+                <label for="bacon"><img src="/cpsc4910/img/meats/bacon.png"/><br>Bacon</label>
               </li>
             </ul>
           </div>
@@ -82,23 +82,23 @@ if (!isset($_SESSION['name']) || !isset($_SESSION['phoneNum'])) {
             <h3>Choose your cheeses:</h3>
             <ul>
               <li><input type="checkbox" name="cheeses[]" value="american" id="american" />
-                <label for="american"><img src="/cpsc4910/student/img/cheeses/american.png" /><br>American</label>
+                <label for="american"><img src="/cpsc4910/img/cheeses/american.png" /><br>American</label>
               </li>
               <li><input type="checkbox" name="cheeses[]" value="swiss" id="swiss" />
-                <label for="swiss"><img src="/cpsc4910/student/img/cheeses/swiss.png" /><br>Swiss</label>
+                <label for="swiss"><img src="/cpsc4910/img/cheeses/swiss.png" /><br>Swiss</label>
               </li>
               <li><input type="checkbox" name="cheeses[]" value="provolone" id="provolone" />
-                <label for="provolone"><img src="/cpsc4910/student/img/cheeses/provolone.png" /><br>Provolone</label>
+                <label for="provolone"><img src="/cpsc4910/img/cheeses/provolone.png" /><br>Provolone</label>
               </li>
               <br>
               <li><input type="checkbox" name="cheeses[]" value="cheddar" id="cheddar" />
-                <label for="cheddar"><img src="/cpsc4910/student/img/cheeses/cheddar.png" /><br>Cheddar</label>
+                <label for="cheddar"><img src="/cpsc4910/img/cheeses/cheddar.png" /><br>Cheddar</label>
               </li>
               <li><input type="checkbox" name="cheeses[]" value="pepper jack" id="pepperJack" />
-                <label for="pepperJack"><img src="/cpsc4910/student/img/cheeses/pepperJack.png" /><br>Pepper<br>Jack</label>
+                <label for="pepperJack"><img src="/cpsc4910/img/cheeses/pepperJack.png" /><br>Pepper<br>Jack</label>
               </li>
               <li><input type="checkbox" name="cheeses[]" value="mozzarella" id="mozzarella" />
-                <label for="mozzarella"><img src="/cpsc4910/student/img/cheeses/mozzarella.png" /><br>Mozzarella</label>
+                <label for="mozzarella"><img src="/cpsc4910/img/cheeses/mozzarella.png" /><br>Mozzarella</label>
               </li>
             </ul>
           </div>
@@ -106,33 +106,33 @@ if (!isset($_SESSION['name']) || !isset($_SESSION['phoneNum'])) {
             <h3>Choose your veggies:</h3>
             <ul>
               <li><input type="checkbox" name="veggies[]" value="lettuce" id="lettuce" />
-                <label for="lettuce"><img src="/cpsc4910/student/img/veggies/lettuce.png" /><br>Lettuce</label>
+                <label for="lettuce"><img src="/cpsc4910/img/veggies/lettuce.png" /><br>Lettuce</label>
               </li>
               <li><input type="checkbox" name="veggies[]" value="tomato" id="tomato" />
-                <label for="tomato"><img src="/cpsc4910/student/img/veggies/tomato.png" /><br>Tomato</label>
+                <label for="tomato"><img src="/cpsc4910/img/veggies/tomato.png" /><br>Tomato</label>
               </li>
               <li><input type="checkbox" name="veggies[]" value="onions" id="onions" />
-                <label for="onions"><img src="/cpsc4910/student/img/veggies/onions.png" /><br>Onions</label>
+                <label for="onions"><img src="/cpsc4910/img/veggies/onions.png" /><br>Onions</label>
               </li>
               <br>
               <li><input type="checkbox" name="veggies[]" value="spinach" id="spinach" />
-                <label for="spinach"><img src="/cpsc4910/student/img/veggies/spinach.png" /><br>Spinach</label>
+                <label for="spinach"><img src="/cpsc4910/img/veggies/spinach.png" /><br>Spinach</label>
               </li>
               <li><input type="checkbox" name="veggies[]" value="cucumbers" id="cucumbers" />
-                <label for="cucumbers"><img src="/cpsc4910/student/img/veggies/cucumbers.png" /><br>Cucumbers</label>
+                <label for="cucumbers"><img src="/cpsc4910/img/veggies/cucumbers.png" /><br>Cucumbers</label>
               </li>
               <li><input type="checkbox" name="veggies[]" value="black olives" id="blackOlives" />
-                <label for="blackOlives"><img src="/cpsc4910/student/img/veggies/blackOlives.png" /><br>Black<br>Olives</label>
+                <label for="blackOlives"><img src="/cpsc4910/img/veggies/blackOlives.png" /><br>Black<br>Olives</label>
               </li>
               <br>
               <li><input type="checkbox" name="veggies[]" value="green peppers" id="greenPeppers" />
-                <label for="greenPeppers"><img src="/cpsc4910/student/img/veggies/greenPeppers.png" /><br>Green<br>Peppers</label>
+                <label for="greenPeppers"><img src="/cpsc4910/img/veggies/greenPeppers.png" /><br>Green<br>Peppers</label>
               </li>
               <li><input type="checkbox" name="veggies[]" value="jalapeños" id="jalapeños" />
-                <label for="jalapeños"><img src="/cpsc4910/student/img/veggies/jalapenos.png" /><br>Jalapenos</label>
+                <label for="jalapeños"><img src="/cpsc4910/img/veggies/jalapenos.png" /><br>Jalapenos</label>
               </li>
               <li><input type="checkbox" name="veggies[]" value="pickles" id="pickles" />
-                <label for="pickles"><img src="/cpsc4910/student/img/veggies/pickles.png" /><br>Pickles</label>
+                <label for="pickles"><img src="/cpsc4910/img/veggies/pickles.png" /><br>Pickles</label>
               </li>
             </ul>
           </div>
@@ -140,33 +140,33 @@ if (!isset($_SESSION['name']) || !isset($_SESSION['phoneNum'])) {
             <h3>Choose your sauce(s):</h3>
             <ul>
               <li><input type="checkbox" name="sauces[]" value="mayonnaise" id="mayonnaise" />
-                <label for="mayonnaise"><img src="/cpsc4910/student/img/sauces/mayonnaise.png" /><br>Mayo</label>
+                <label for="mayonnaise"><img src="/cpsc4910/img/sauces/mayonnaise.png" /><br>Mayo</label>
               </li>
               <li><input type="checkbox" name="sauces[]" value="ranch" id="ranch" />
-                <label for="ranch"><img src="/cpsc4910/student/img/sauces/ranch.png" /><br>Ranch</label>
+                <label for="ranch"><img src="/cpsc4910/img/sauces/ranch.png" /><br>Ranch</label>
               </li>
               <li><input type="checkbox" name="sauces[]" value="mustard" id="mustard" />
-                <label for="mustard"><img src="/cpsc4910/student/img/sauces/mustard.png" /><br>Mustard</label>
+                <label for="mustard"><img src="/cpsc4910/img/sauces/mustard.png" /><br>Mustard</label>
               </li>
               <br>
               <li><input type="checkbox" name="sauces[]" value="chipotle" id="chipotle" />
-                <label for="chipotle"><img src="/cpsc4910/student/img/sauces/chipotle.png" /><br>Chipotle</label>
+                <label for="chipotle"><img src="/cpsc4910/img/sauces/chipotle.png" /><br>Chipotle</label>
               </li>
               <li><input type="checkbox" name="sauces[]" value="oil and vinegar" id="oilAndVinegar" />
-                <label for="oilAndVinegar"><img src="/cpsc4910/student/img/sauces/oilAndVinegar.png" /><br>Oil+Vinegar</label>
+                <label for="oilAndVinegar"><img src="/cpsc4910/img/sauces/oilAndVinegar.png" /><br>Oil+Vinegar</label>
               </li>
               <li><input type="checkbox" name="sauces[]" value="caesar" id="caesar" />
-                <label for="caesar"><img src="/cpsc4910/student/img/sauces/caesar.png" /><br>Caesar</label>
+                <label for="caesar"><img src="/cpsc4910/img/sauces/caesar.png" /><br>Caesar</label>
               </li>
               <br>
               <li><input type="checkbox" name="sauces[]" value="barbecue" id="barbecue" />
-                <label for="barbecue"><img src="/cpsc4910/student/img/sauces/barbecue.png" /><br>Barbecue</label>
+                <label for="barbecue"><img src="/cpsc4910/img/sauces/barbecue.png" /><br>Barbecue</label>
               </li>
               <li><input type="checkbox" name="sauces[]" value="buffalo" id="buffalo" />
-                <label for="buffalo"><img src="/cpsc4910/student/img/sauces/buffalo.png" /><br>Buffalo</label>
+                <label for="buffalo"><img src="/cpsc4910/img/sauces/buffalo.png" /><br>Buffalo</label>
               </li>
               <li><input type="checkbox" name="sauces[]" value="honey mustard" id="honeyMustard" />
-                <label for="honeyMustard"><img src="/cpsc4910/student/img/sauces/honeyMustard.png" /><br>Honey<br>Mustard</label>
+                <label for="honeyMustard"><img src="/cpsc4910/img/sauces/honeyMustard.png" /><br>Honey<br>Mustard</label>
               </li>
             </ul>
           </div>

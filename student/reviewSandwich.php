@@ -1,10 +1,10 @@
 <?php
 session_start();
 
-// if name or phoneNum session vars not set, redirect to index.html
+// if name or phoneNum session vars not set, redirect to nameNum.php
 if (!isset($_SESSION['name']) || !isset($_SESSION['phoneNum'])) {
   echo "sesion vars not set";
-  header("Location: /cpsc4910/student/index.html", true, 302);
+  header("Location: /cpsc4910/student/nameNum.php", true, 302);
   return;
 }
 
