@@ -31,6 +31,7 @@ $sandwich = json_encode($sandwich);
     <h3>Make sure your order is correct, and then click "Submit Order"</h3>
     <div id="reviewNameNumDiv">
     </div>
+    <br>
     <div id="reviewSandwichDiv">
     </div>
     <br>

@@ -5,10 +5,17 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  background-color: #F66733;
+  color: white;
+}
+
 #reviewSandwichDiv {
-  border: 1px solid orange;
+  width: 50%;
+  border: 3px solid #522D80;;
 }
 
 #reviewNameNumDiv {
-  border: 1px solid purple;
+  width: 50%;
+  border: 3px solid #522D80;
 }
