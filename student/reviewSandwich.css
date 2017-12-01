@@ -1,6 +1,6 @@
 body {
   background-color: #F66733;
-  color: white;
+  color: black;
   margin: auto;
   text-align: center;
   font-family: sans-serif;
@@ -8,11 +8,13 @@ body {
 }
 
 #reviewSandwichDiv {
+  margin: auto;
   width: 50%;
   border: 3px solid #522D80;;
 }
 
 #reviewNameNumDiv {
+  margin: auto;
   width: 50%;
   border: 3px solid #522D80;
 }
