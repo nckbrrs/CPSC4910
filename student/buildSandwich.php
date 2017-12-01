@@ -34,7 +34,7 @@ if (!isset($_SESSION['name']) || !isset($_SESSION['phoneNum'])) {
             <h3>Choose your bread:</h3>
             <ul>
               <li><input type="radio" name="bread" value="white" id="whiteBread"/>
-                <label for="whiteBread"><img src="/cpsc4910/student/img/breads/white.png" />White</label>
+                <label for="whiteBread"><img src="/cpsc4910/student/img/breads/white.png" /><br>White</label>
               </li>
               <li><input type="radio" name="bread" value="wheat" id="wheatBread"/>
                 <label for="wheatBread"><img src="/cpsc4910/student/img/breads/wheat.png" /></label>
