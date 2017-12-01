@@ -25,7 +25,7 @@ $_POST = array();
     <h1>Success!</h1>
     <p>Your order has been sent to the dining hall employee.</p>
     <p>You will be notified when your sandwich is ready to be picked up.</p>
-    <form action="/cpsc4910/student/index.html">
+    <form action="/cpsc4910/student/nameNum.php">
         <input type="submit" value="Start a new order" />
     </form>
   </body>
