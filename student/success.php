@@ -12,10 +12,12 @@ $_POST = array();
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
     <style type="text/css">
       html {
-        display: block;
+        background-color: #F66733;
+        color: black;
         margin: auto;
         text-align: center;
         font-family: sans-serif;
+        box-sizing: border-box;
       }
     </style>
   </head>
