@@ -21,7 +21,7 @@ $_SESSION = array();
     <div id="nameNumDiv">
       <form id="nameNumForm" method="post" action="/cpsc4910/student/buildSandwich.php">
         <label>Name:<br><input type="text" name="name" id="name"></label><br><br>
-        <label>Phone Number:<br><input type="tel" name="phoneNum" id="phoneNum"></label><br>
+        <label>Phone Number:<br><input type="tel" name="phoneNum" id="phoneNum"></label><br><br>
         <button id="nameNumSubmit" type="submit" name="nameNumSubmit">Build Your Sandwich</button>
       </form>
     </div>
