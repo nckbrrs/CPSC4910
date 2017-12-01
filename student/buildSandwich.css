@@ -5,9 +5,13 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  background-color: #F66733;
+  color: white;
+}
+
 #container {
   width: 100%;
-  background-color: #F66733;
 }
 
 #leftHalfDiv {
@@ -17,7 +21,7 @@ html {
   padding: 5px;
   right:50%;
   width: 45%;
-  border: 1px solid #522D80;
+  border: 3px solid #522D80;
 }
 
 #rightHalfDiv {
