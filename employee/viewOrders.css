@@ -1,4 +1,6 @@
-html {
+body {
+  background-color: #F66733;
+  color: black;
   display: block;
   margin: auto;
   text-align: center;
@@ -9,5 +11,5 @@ html {
   width: 50%;
   margin: auto;
   padding: 10px;
-  border: 1px solid orange;
+  border: 3px solid #522D80;
 }
