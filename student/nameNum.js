@@ -6,7 +6,7 @@ function showError(msg) {
     return;
   } else {
     errorNode.innerText = msg;
-    errorNode.style = "color: red;";
+    errorNode.style = "color: #522D80";
   }
 };
 
