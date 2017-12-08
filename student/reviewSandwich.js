@@ -149,5 +149,4 @@ function onLoad() {
   return true;
 }
 
-window.addEventListener("load", onLoad, false);
- 
+window.addEventListener("load", onLoad, false); 

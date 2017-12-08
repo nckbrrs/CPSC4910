@@ -42,5 +42,4 @@ $sandwich = json_encode($sandwich);
     <script type="text/javascript">var phoneNum = '<?php echo $_SESSION['phoneNum']; ?>';</script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </body>
-</html>
- 
+</html> 

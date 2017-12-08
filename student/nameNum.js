@@ -43,5 +43,4 @@ function onLoad() {
   formNode.onsubmit = nameNumOnSubmit;
 };
 
-window.addEventListener("load", onLoad, false);
- 
+window.addEventListener("load", onLoad, false); 

@@ -29,5 +29,4 @@ $_POST = array();
         <input type="submit" value="Start a new order" />
     </form>
   </body>
-</html>
- 
+</html> 

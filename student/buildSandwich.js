@@ -122,5 +122,4 @@ function onLoad() {
   }
 }
 
-window.addEventListener("load", onLoad, false);
- 
+window.addEventListener("load", onLoad, false); 
