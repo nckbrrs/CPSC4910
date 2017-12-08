@@ -29,3 +29,4 @@ $_SESSION = array();
     <script type="text/javascript" src="/cpsc4910/student/nameNum.js"></script>
   </body>
 </html>
+ 
