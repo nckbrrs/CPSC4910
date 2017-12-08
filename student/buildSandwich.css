@@ -1,6 +1,6 @@
 body {
   background-color: #F66733;
-  color: black;
+  color: ;
   margin: auto;
   text-align: center;
   font-family: sans-serif;
@@ -19,6 +19,7 @@ body {
   right:30%;
   width: 40%;
   border: 3px solid #522D80;
+  border-radius: 20px 0px 0px 20px;
 }
 
 #rightHalfDiv {
@@ -26,11 +27,12 @@ body {
   background-color: white;
   text-align:left;
   position:fixed;
-  padding: 5px;
+  padding: 0px 15px 15px 15px;
   left:70%;
   width: 20%;
   border: 3px solid #522D80;
   border-left: 0px;
+  border-radius:0px 20px 20px 0px;
 }
 
 #clear {
