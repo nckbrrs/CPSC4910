@@ -1,4 +1,4 @@
-function populateOrderList(orders) {
+ function populateOrderList(orders) {
   console.log(orders);
   var orderListNode = document.getElementById("orderList");
 
