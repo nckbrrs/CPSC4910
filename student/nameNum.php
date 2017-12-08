@@ -15,9 +15,9 @@ $_SESSION = array();
 
   <body>
     <h1>Build Your Own Sandwich</h1>
+    <h3 id="instructions">Enter your name and phone number to begin:</h3>
     <div id="errorMessage" class="errorMessage" style="visibility: hidden;"></div>
     <br>
-    <p id="instructions">Enter your name and phone number to begin:</p>
     <div id="nameNumDiv">
       <form id="nameNumForm" method="post" action="/cpsc4910/student/buildSandwich.php">
         <label>Name:<br><input type="text" name="name" id="name"></label><br><br>
